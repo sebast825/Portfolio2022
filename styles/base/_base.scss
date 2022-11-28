@@ -1,47 +1,29 @@
-*,
-*::after,
-*::before{
-	margin:0;
-	padding: 0;
-	/* is a better practive put this here and in the body as border-box */
-	/* is easier to modify */
-	box-sizing: inherit;
-	
 
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: inherit;
+   
 }
-
-html{
-
-	/* use 10 so is easy calculte rem and em */
-	/* use % alows users modify the hole font size, if we use px user won't */
-	font-size: 62.5%;
-//this allows us to change all the size for each type of view, because all what we have done is in rem. Based in this :) 
-	
-	//remember to put each include in order, now from bigger view to smaller because is done by max-width, this means that in case has a view tab-port size(smaller than tab-land) will aply bought, how is cascade, the one we want to be aply should be at the end
-	@include respond (tab-land){
-		font-size: 56.2%;
-	}
-	@include respond (tab-port){
-		font-size: 50%;
-	}
-	@include respond (big-desktop){
-		font-size: 75%;
-	}
-}
-
 body{
-	
-	box-sizing: border-box;
-	padding: 3rem;
-
-	@include respond(tab-port) {
-		 padding: 0;
-	}
-
+   box-sizing: border-box;   
+   
+   
 }
 
-//when select text in a page is with a custom color
-::selection{
-	background-color: $color-primary;
-	color: $color-white;
+*,html{
+   font-size: 62.5%;
+   @include respond (desktop){
+      font-size: 56.25%;
+   }
+   @include respond (ipad){
+      font-size: 50%;
+
+   }
+  
+   @include respond (bigDesktop){
+      font-size: 75%;
+   }
+
+
 }
