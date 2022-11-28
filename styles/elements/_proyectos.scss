@@ -1,4 +1,50 @@
 
+#bajo{
+   background: linear-gradient(10deg, rgba(2,0,36,1) 0%, rgba(0,150,255,1) 15%, rgba(0,212,255,1) 100%);  
+   border-radius: 10px;    
+   position: relative;
+   height: min-content;
+   width: 85vw;
+   margin: 1rem auto;
+   margin-top: 4rem;
+   padding-bottom: 10rem;
+   
+}
+
+#proyectos{
+   position: relative;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   align-items: center;
+   /* padding-bottom: 4rem; */
+   /* width: 85vw; */
+   gap: 3rem;
+}
+
+.proyectos-div img:hover{
+   box-shadow: 0px 0px 20px #581052;
+}
+
+.proyectos-div h3, a{
+   text-align: center;
+   list-style-type:none;
+   text-decoration: none;
+  color:#232;
+   
+}
+.proyectos-div a{
+   font-size: 2rem;
+   margin-top: .3rem;
+ 
+}
+.proyectos-div a:hover{
+   /* text-shadow: 0px 0px 10px whitesmoke, 0px 0px 20px whitesmoke; */
+   color: #fff;
+  
+}
+
+
 .container__project{
 /* border: 2px solid red; */
 display: flex;
@@ -12,7 +58,6 @@ margin-bottom: 2rem;
 padding-bottom: 1rem;
 border-radius: 3px;
 padding: 1rem .3rem;
-
 background-color: rgba(255, 255,255,.2);
 }
 @media only screen and (max-width:600px) {
@@ -35,7 +80,7 @@ background-color: rgba(255, 255,255,.2);
 
 .project__img{
    min-width: 20rem;
-  max-width: 40rem;
+  max-width: 30rem;
   height:15rem;
   margin: auto .5rem;
   position: relative;
