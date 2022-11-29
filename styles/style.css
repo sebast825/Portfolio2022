@@ -8,6 +8,7 @@ body {
 
 body {
   box-sizing: border-box;
+  overflow-x: hidden;
   margin: 0; }
 
 #bajo {
@@ -15,7 +16,7 @@ body {
   border-radius: 10px;
   position: relative;
   height: min-content;
-  width: 85vw;
+  width: 100%;
   margin: 1rem auto;
   margin-top: 4rem;
   padding-bottom: 10rem; }
@@ -64,9 +65,9 @@ body {
       max-height: unset; } }
 
 .project__img {
-  min-width: 20rem;
+  min-width: 17rem;
   max-width: 40rem;
-  height: 15rem;
+  height: 12rem;
   margin: auto .5rem;
   position: relative;
   overflow: hidden;
