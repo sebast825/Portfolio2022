@@ -8,12 +8,16 @@
    margin: 1rem auto;
    margin-top: 4rem;
 
+   background-size: cover;
+   background-attachment: fixed;
+   background-position: 0 0;
+   background-repeat: repeat;
    @media screen and (max-width: 750px) {
       width: auto;
       height: auto;
       margin: 0;
       width: 100vw;
-              padding-bottom: 15rem;
+      padding-bottom: 15rem;
              
    }
 }
