@@ -2,8 +2,11 @@
    width: 100vw;
    text-align: center;
    padding-bottom: 4rem;
-   font-size: $tittle-section;
+   font-size: $section-tittle;
    color: white;
+   @include respond(phone){
+      font-size: $section-tittle--phone;
+   }
 }
 .proyectos{
    position: relative;
