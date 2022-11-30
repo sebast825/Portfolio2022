@@ -15,7 +15,8 @@ body {
   width: 100vw;
   text-align: center;
   padding-bottom: 4rem;
-  font-size: 4rem; }
+  font-size: 4rem;
+  color: white; }
 
 .proyectos {
   position: relative;
@@ -36,16 +37,17 @@ body {
 .container__project {
   /* border: 2px solid red; */
   display: flex;
-  box-shadow: 0px 0px 8px #444;
+  box-shadow: 0px 0px 8px #222;
   width: 900px;
   max-width: 400px;
   flex-direction: column;
+  border-radius: 3px;
   margin-bottom: 2rem;
   padding-bottom: 1rem;
   border-radius: 3px;
   gap: 1.5rem;
   margin-bottom: 5rem;
-  background-color: rgba(255, 255, 255, 0.2); }
+  background-color: #eee; }
   @media (max-width: 56.25em) {
     .container__project {
       margin: 0;
@@ -100,6 +102,7 @@ body {
       margin: 0; } }
 
 .project__content {
+  background-color: #eee;
   padding: 0 1.5rem; }
   @media (max-width: 56.25em) {
     .project__content {
@@ -152,7 +155,7 @@ body {
   flex-direction: column; }
 
 .section__project {
-  background: linear-gradient(10deg, #020024 0%, #0096ff 15%, #00d4ff 100%);
+  background-image: url("/img/texturas/vision.jpg");
   border-radius: 10px;
   position: relative;
   padding: 5rem 0;
