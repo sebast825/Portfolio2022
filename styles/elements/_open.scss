@@ -1,0 +1,18 @@
+
+.open{
+   &__text{
+      
+         // font-size: $fontBig;
+      
+      
+   }
+   &__title{
+      text-transform: uppercase;
+      font-size: $section-tittle;
+
+   }
+   &__subtitle{
+      font-size: $section-subtittle;
+   }
+
+}

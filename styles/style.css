@@ -11,6 +11,13 @@ body {
   overflow-x: hidden;
   margin: 0; }
 
+.open__title {
+  text-transform: uppercase;
+  font-size: 4rem; }
+
+.open__subtitle {
+  font-size: 1rem; }
+
 .container__sectionProject--tittle {
   width: 100vw;
   text-align: center;
@@ -160,6 +167,38 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column; }
+
+.section__open {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 70rem;
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+  gap: 3rem; }
+  @media (max-width: 37.5em) {
+    .section__open {
+      font-size: .3rem; } }
+
+.section__text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10rem 20rem;
+  gap: 1rem;
+  font-size: 1.5rem; }
+  @media (max-width: 56.25em) {
+    .section__text {
+      padding: 7rem 12rem; } }
+  @media (max-width: 37.5em) {
+    .section__text {
+      padding: 5rem; } }
 
 .section__project {
   background-image: url("/img/texturas/vision.jpg");
