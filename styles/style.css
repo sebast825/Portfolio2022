@@ -36,6 +36,10 @@ body {
       grid-template-columns: 1fr;
       width: 100vw;
       gap: 2rem; } }
+  @media (max-width: 37.5em) {
+    .proyectos {
+      width: 90vw;
+      gap: 5rem; } }
 
 .container__project {
   /* border: 2px solid red; */
