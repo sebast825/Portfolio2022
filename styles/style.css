@@ -11,22 +11,11 @@ body {
   overflow-x: hidden;
   margin: 0; }
 
-#bajo {
-  background: linear-gradient(10deg, #020024 0%, #0096ff 15%, #00d4ff 100%);
-  border-radius: 10px;
-  position: relative;
-  padding: 5rem 0;
-  width: 100%;
-  margin: 1rem auto;
-  margin-top: 4rem; }
-  @media screen and (max-width: 750px) {
-    #bajo {
-      width: auto;
-      height: auto;
-      margin: 0;
-      width: 100vw;
-      padding-bottom: 15rem;
-      background: linear-gradient(10deg, #020024 0%, #0096ff 5%, #00d4ff 100%); } }
+.container__sectionProject--tittle {
+  width: 100vw;
+  text-align: center;
+  padding-bottom: 4rem;
+  font-size: 4rem; }
 
 .proyectos {
   position: relative;
@@ -47,7 +36,7 @@ body {
 .container__project {
   /* border: 2px solid red; */
   display: flex;
-  box-shadow: 0px 0px 4px #444;
+  box-shadow: 0px 0px 8px #444;
   width: 900px;
   max-width: 400px;
   flex-direction: column;
@@ -161,3 +150,20 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column; }
+
+.section__project {
+  background: linear-gradient(10deg, #020024 0%, #0096ff 15%, #00d4ff 100%);
+  border-radius: 10px;
+  position: relative;
+  padding: 5rem 0;
+  width: 100%;
+  margin: 1rem auto;
+  margin-top: 4rem; }
+  @media screen and (max-width: 750px) {
+    .section__project {
+      width: auto;
+      height: auto;
+      margin: 0;
+      width: 100vw;
+      padding-bottom: 15rem;
+      background: linear-gradient(10deg, #020024 0%, #0096ff 5%, #00d4ff 100%); } }

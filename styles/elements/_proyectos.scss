@@ -1,21 +1,8 @@
-#bajo{
-   background: linear-gradient(10deg, rgba(2,0,36,1) 0%, rgba(0,150,255,1) 15%, rgba(0,212,255,1) 100%);  
-   border-radius: 10px;    
-   position: relative;
-   padding: 5rem 0;
-   width:100%;
-
-   margin: 1rem auto;
-   margin-top: 4rem;
-
-   @media screen and (max-width: 750px) {
-      width: auto;
-      height: auto;
-      margin: 0;
-      width: 100vw;
-              padding-bottom: 15rem;
-              background: linear-gradient(10deg, rgba(2,0,36,1) 0%, rgba(0,150,255,1) 5%, rgba(0,212,255,1) 100%);  
-   }
+.container__sectionProject--tittle{
+   width: 100vw;
+   text-align: center;
+   padding-bottom: 4rem;
+   font-size: $tittle-section;
 }
 .proyectos{
    position: relative;
@@ -39,7 +26,7 @@
 .container__project{
    /* border: 2px solid red; */
    display: flex;
-   box-shadow: 0px 0px 4px #444;
+   box-shadow: 0px 0px 8px #444;
    width: 900px;
    max-width: 400px;
    flex-direction: column;
