@@ -39,7 +39,7 @@
 .container__project{
    /* border: 2px solid red; */
    display: flex;
-   box-shadow: 0px 2px 16px -4px   black;
+   box-shadow: 0px 0px 4px #444;
    width: 900px;
    max-width: 400px;
    flex-direction: column;
@@ -55,6 +55,7 @@
 
    @include respond(ipad){
          margin: 0;
+         padding-bottom: 0;
           max-width: 600px; 
           max-height: unset;
           flex-direction:row;
@@ -63,11 +64,12 @@
    }
    @include respond(phone){
       gap: 0rem;
-  
+
       padding-bottom: .5rem;
       width: auto;
       box-shadow: 0px 2px 7px -4px   black;
       padding:  0;
+      padding-bottom: 1rem;
       flex-direction: column;
     
    }
@@ -81,11 +83,10 @@
      border-radius: 3px;
      position: relative;
      overflow: hidden;
-     box-shadow: 0px 0px 2px   black;
      @include respond(ipad){
-         min-width: 14rem;
-         max-width: 14rem;
-         height: 12rem;
+         min-width: 16rem;
+         max-width: 16rem;
+         height: 17rem;
      }
      @include respond(phone){
       min-width: 100%;
