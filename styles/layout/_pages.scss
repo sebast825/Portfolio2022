@@ -4,11 +4,17 @@
    align-items: center;
    justify-content: center;
    flex-direction: column;
-   height: 70rem;
+   height: 60rem;
    color: $colorSecondary;
    background-color: $colorPrimary;
    text-align: center;
    gap: 3rem;
+   h1{
+      font-size: $section-tittle;
+   }
+   h2{
+      font-size: $section-subtittle ;
+   }
    @include respond (phone){
       font-size: .3rem;
    }

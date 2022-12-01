@@ -16,7 +16,7 @@ body {
   font-size: 4rem; }
 
 .open__subtitle {
-  font-size: 1rem; }
+  font-size: 1.5rem; }
 
 .container__sectionProject--tittle {
   width: 100vw;
@@ -174,11 +174,15 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 70rem;
+  height: 60rem;
   color: #fff;
   background-color: #000;
   text-align: center;
   gap: 3rem; }
+  .section__open h1 {
+    font-size: 4rem; }
+  .section__open h2 {
+    font-size: 1.5rem; }
   @media (max-width: 37.5em) {
     .section__open {
       font-size: .3rem; } }
