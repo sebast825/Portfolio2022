@@ -14,5 +14,62 @@
    &__subtitle{
       font-size: $section-subtittle;
    }
+   &__content{
+      display: flex;
+      flex-direction: column;
+text-align: center;
+gap: 1rem;
+      &--tittle{
+         font-size: 5rem;
+         color: #fff;
+         text-shadow: 0 0 5px black;
+      }
+      &--subTittle{
+         font-size: 1.5rem;
+         color: #fff;
+         text-shadow: 0 0 5px black;
+      }
+   }
+}
 
+
+.background,
+.foreground,
+.backgroundMiddle{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   z-index: -1;
+}
+
+.background{
+   /* the translate put the image far away from the screen (together with the perspective from wrapper, and with scale we put the normal size) */
+   transform: translateZ(-10px) scale(2);
+   filter: brightness(1.2);
+}
+.backgroundMiddle{
+   transform: translateZ(-7px) scale(1.7);
+   /* background-position: -50px; */
+   /* background-attachment: 0 -50; */
+   filter: brightness(.35);
+
+
+}
+.foreground{
+   transform: translateZ(-1px) scale(1.1);
+   filter: brightness(.75);
+
+   
+}
+.tittle{
+   font-size: 7rem;
+   color: #fff;
+   text-shadow: 0 0 5px black;
+}
+.asd{
+   font-size: 2rem;
+   // padding: 2rem;
+   background-color: #333;
+   color: #fff;
 }

@@ -9,7 +9,16 @@ body {
 body {
   box-sizing: border-box;
   overflow-x: hidden;
-  margin: 0; }
+  margin: 0;
+  height: 100%; }
+
+.wrapper {
+  height: 100vh;
+  /* if overflow here is inside the class and not the body */
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px;
+  width: 100vw; }
 
 .open__title {
   text-transform: uppercase;
@@ -17,6 +26,54 @@ body {
 
 .open__subtitle {
   font-size: 1.5rem; }
+
+.open__content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem; }
+  .open__content--tittle {
+    font-size: 5rem;
+    color: #fff;
+    text-shadow: 0 0 5px black; }
+  .open__content--subTittle {
+    font-size: 1.5rem;
+    color: #fff;
+    text-shadow: 0 0 5px black; }
+
+.background,
+.foreground,
+.backgroundMiddle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; }
+
+.background {
+  /* the translate put the image far away from the screen (together with the perspective from wrapper, and with scale we put the normal size) */
+  transform: translateZ(-10px) scale(2);
+  filter: brightness(1.2); }
+
+.backgroundMiddle {
+  transform: translateZ(-7px) scale(1.7);
+  /* background-position: -50px; */
+  /* background-attachment: 0 -50; */
+  filter: brightness(0.35); }
+
+.foreground {
+  transform: translateZ(-1px) scale(1.1);
+  filter: brightness(0.75); }
+
+.tittle {
+  font-size: 7rem;
+  color: #fff;
+  text-shadow: 0 0 5px black; }
+
+.asd {
+  font-size: 2rem;
+  background-color: #333;
+  color: #fff; }
 
 .container__sectionProject--tittle {
   width: 100vw;
@@ -169,18 +226,15 @@ body {
   flex-direction: column; }
 
 .section__open {
-  width: 100%;
+  position: relative;
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-direction: column;
-  height: 60rem;
-  color: #fff;
-  background-color: #000;
-  text-align: center;
-  gap: 3rem; }
-  .section__open h1 {
-    font-size: 4rem; }
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  /* the animation perspective works well with this */
+  transform-style: preserve-3d;
+  z-index: -1; }
   .section__open h2 {
     font-size: 1.5rem; }
   @media (max-width: 37.5em) {
@@ -210,8 +264,6 @@ body {
   position: relative;
   padding: 5rem 0;
   width: 100%;
-  margin: 1rem auto;
-  margin-top: 4rem;
   background-size: cover;
   background-attachment: fixed;
   background-position: 0 0;
