@@ -43,7 +43,8 @@ body {
 
 .background,
 .foreground,
-.backgroundMiddle {
+.backgroundMiddle,
+.section__text--foto {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -72,8 +73,34 @@ body {
 
 .asd {
   font-size: 2rem;
-  background-color: #333;
   color: #fff; }
+
+.capaFondo {
+  width: 100%;
+  height: 100%;
+  position: absolute; }
+  .capaFondoUno {
+    background-image: linear-gradient(to top, #020, #1A1E0D 5%, transparent 40%);
+    opacity: 85%;
+    filter: brightness(0.2); }
+  .capaFondoDos {
+    background-image: linear-gradient(to bottom, #000a00 10%, transparent 40%);
+    opacity: 95%;
+    background-size: cover; }
+
+.section__text--foto {
+  object-fit: cover; }
+
+.imgFondo {
+  background-image: url("/img/imgBg/hojas.jpg");
+  background-size: cover;
+  background-attachment: fixed; }
+
+.div {
+  filter: blur(0);
+  height: 1rem;
+  width: 100%;
+  background-color: #1A1E0D; }
 
 .container__sectionProject--tittle {
   width: 100vw;
@@ -244,11 +271,15 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
+  position: relative;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding: 10rem 20rem;
   gap: 1rem;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
   font-size: 1.5rem; }
   @media (max-width: 56.25em) {
     .section__text {

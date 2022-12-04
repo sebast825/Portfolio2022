@@ -35,7 +35,8 @@ gap: 1rem;
 
 .background,
 .foreground,
-.backgroundMiddle{
+.backgroundMiddle,
+.section__text--foto{
    position: absolute;
    width: 100%;
    height: 100%;
@@ -69,7 +70,53 @@ gap: 1rem;
 }
 .asd{
    font-size: 2rem;
-   // padding: 2rem;
-   background-color: #333;
+ 
    color: #fff;
+}
+
+
+.capaFondo{
+   width: 100%;
+   height: 100%;
+   position: absolute;
+
+   &Uno{
+      background-image: linear-gradient(to top, #020 , #1A1E0D 5%,transparent 40%);
+      opacity: 85%;
+      filter: brightness(.2) ;
+   
+   }
+   &Dos{
+   
+   
+      // height: 150vh;
+      background-image: linear-gradient(to bottom,  rgb(00,10,00) 10%,transparent 40%);
+   
+      opacity: 95%;
+      background-size: cover;
+      // background-attachment: fixed;
+     
+     
+   
+   }
+
+}
+.section__text--foto{
+   // filter: brightness(.2);
+   object-fit:cover;
+   
+}
+.imgFondo{
+    background-image: url('/img/imgBg/hojas.jpg');  
+   // filter: brightness(.2);
+   background-size: cover;
+   background-attachment: fixed;
+
+
+}
+.div{
+   filter: blur(0);
+height: 1rem;
+width: 100%;
+background-color: #1A1E0D;
 }
