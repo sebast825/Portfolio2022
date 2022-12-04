@@ -1,9 +1,11 @@
-.container__sectionProject--tittle{
+.container__tittle{
    width: 100vw;
    text-align: center;
    padding-bottom: 4rem;
    font-size: $section-tittle;
    color: white;
+   text-shadow: 0 0px 1px #000;
+
    @include respond(phone){
       font-size: $section-tittle--phone;
    }
