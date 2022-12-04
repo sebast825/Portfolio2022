@@ -4,3 +4,7 @@ $section-tittle--phone:3rem;
 $section-subtittle:1.5rem;
 
 $fontMedium:1.5rem;
+
+@mixin fontUno{
+   font-family: 'Rock Salt', cursive;
+}

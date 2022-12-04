@@ -10,7 +10,8 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
   margin: 0;
-  height: 100%; }
+  height: 100%;
+  font-family: 'Roboto', sans-serif; }
 
 .wrapper {
   height: 100vh;
@@ -108,7 +109,8 @@ body {
   padding-bottom: 4rem;
   font-size: 4rem;
   color: white;
-  text-shadow: 0 0px 1px #000; }
+  text-shadow: 0 0px 1px #000;
+  font-family: 'Rock Salt', cursive; }
   @media (max-width: 37.5em) {
     .container__tittle {
       font-size: 3rem; } }
@@ -202,6 +204,8 @@ body {
 .project__content {
   color: #fff;
   padding: 0 1.5rem; }
+  .project__content p {
+    font-size: 1.1rem; }
   @media (max-width: 56.25em) {
     .project__content {
       padding: 0; } }
@@ -211,7 +215,8 @@ body {
 
 .project__tittle h3 {
   font-size: 2rem;
-  margin-bottom: .3rem; }
+  margin-bottom: .3rem;
+  font-family: 'Rock Salt', cursive; }
 
 @media (max-width: 37.5em) {
   .project__tittle h3 {
@@ -227,8 +232,12 @@ body {
 
 .project__tecnology span {
   padding: .2rem;
-  color: #232;
-  transform: scale(0.9); }
+  color: #ddd;
+  transform: scale(0.9);
+  transition: transfrom .2s ease;
+  font-family: 'Rock Salt', cursive; }
+  .project__tecnology span:hover {
+    transform: rotate(5deg); }
 
 .project__link {
   /* border: 1px solid purple; */
@@ -238,14 +247,16 @@ body {
   padding: 1rem 0; }
 
 .project__link :hover {
-  color: #000; }
+  color: #fff; }
 
 .project__link--github {
   transform: scale(1.3); }
 
 .project__link a {
   text-decoration: underline;
-  text-transform: none; }
+  text-transform: none;
+  color: #ddd;
+  font-family: 'Roboto', sans-serif; }
 
 .project__content {
   display: flex;
@@ -254,6 +265,7 @@ body {
 
 .tecnology--item {
   width: 9rem;
+  font-family: 'Rock Salt', cursive;
   position: relative;
   display: flex;
   justify-content: center;
@@ -291,7 +303,8 @@ body {
   width: 100vw;
   /* the animation perspective works well with this */
   transform-style: preserve-3d;
-  z-index: -1; }
+  z-index: -1;
+  font-family: 'Rock Salt', cursive; }
   .section__open h2 {
     font-size: 1.5rem; }
   @media (max-width: 37.5em) {
@@ -313,12 +326,17 @@ body {
   background-color: #000;
   color: #fff;
   font-size: 1.5rem; }
+  .section__text h2 {
+    font-family: 'Rock Salt', cursive; }
   @media (max-width: 56.25em) {
     .section__text {
       padding: 7rem 12rem; } }
   @media (max-width: 37.5em) {
     .section__text {
       padding: 5rem 1rem; } }
+  .section__text p {
+    font-family: 'Roboto', sans-serif;
+    margin: 1rem; }
 
 .section__project {
   background-image: url("/img/imgBg/hojas4.jpg");

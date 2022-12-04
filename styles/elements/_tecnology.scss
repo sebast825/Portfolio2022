@@ -1,7 +1,7 @@
 
 .tecnology--item{
    width: 9rem;
-
+   @include fontUno;
    // height: 9rem;
    position: relative;
    display: flex;

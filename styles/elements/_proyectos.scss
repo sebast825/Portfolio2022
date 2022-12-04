@@ -1,3 +1,4 @@
+
 .container__tittle{
    width: 100vw;
    text-align: center;
@@ -6,6 +7,8 @@
    color: white;
    text-shadow: 0 0px 1px #000;
 
+   @include fontUno;
+   
    @include respond(phone){
       font-size: $section-tittle--phone;
    }
@@ -129,6 +132,10 @@ $bgProject: #fff;
          // background-color: $colorProject;
          color: $bgProject;
          padding: 0 1.5rem;
+         p{
+            font-size: 1.1rem;
+
+         }
          @include respond(ipad){
             padding: 0;
          }
@@ -139,7 +146,7 @@ $bgProject: #fff;
       &__tittle h3{
          font-size: 2rem;
          margin-bottom: .3rem;
-      
+         @include fontUno;
       }
       @include respond(phone){
          &__tittle h3{
@@ -156,8 +163,13 @@ $bgProject: #fff;
       }
       &__tecnology span{
          padding: .2rem;
-         color: #232;
+         color: #ddd;
       transform: scale(.9);
+      transition: transfrom .2s ease;
+      @include fontUno;
+         &:hover{
+            transform: rotate(5deg);
+         }
       
       }
       &__link{
@@ -167,10 +179,11 @@ $bgProject: #fff;
          font-weight: 1000;
          padding: 1rem 0;
  
+ 
          
       }
       &__link :hover{
-         color: #000;
+         color: #fff;
       }
       &__link--github{
          transform: scale(1.3);
@@ -179,6 +192,9 @@ $bgProject: #fff;
       &__link a{
          text-decoration: underline; 
          text-transform: none;
+         color: #ddd;
+         font-family: 'Roboto', sans-serif;
+
        }
        &__content{
          display: flex;

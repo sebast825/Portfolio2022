@@ -1,14 +1,5 @@
 .section__open{
-   // width: 100%;
-   // display: flex;
-   // align-items: center;
-   // justify-content: center;
-   // flex-direction: column;
-   // height: 60rem;
-   // color: $colorSecondary;
-   // background-color: $colorPrimary;
-   // text-align: center;
-   // gap: 3rem;
+
    position: relative;
    display: flex;
    justify-content: center;
@@ -19,9 +10,7 @@
    /* the animation perspective works well with this */
    transform-style: preserve-3d;
    z-index: -1;
-   // h1{
-   //    font-size: $section-tittle;
-   // }
+@include fontUno;
    h2{
       font-size: $section-subtittle ;
    }
@@ -48,7 +37,9 @@
    background-color: #000;
    color: #fff;
 // filter: blur(3px);
-
+h2{
+   @include fontUno;
+}
    font-size: $fontMedium;  
    @include respond (ipad){
       padding: 7rem 12rem;
@@ -56,7 +47,10 @@
    @include respond (phone){
       padding: 5rem 1rem ;
    }
-  
+  p{
+   font-family: 'Roboto', sans-serif;
+   margin: 1rem;
+  }
 }
 
 .section__project{
