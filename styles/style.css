@@ -279,17 +279,18 @@ body {
   gap: 1rem;
   background-size: cover;
   background-attachment: fixed;
-  overflow: hidden;
+  background-color: #000;
+  color: #fff;
   font-size: 1.5rem; }
   @media (max-width: 56.25em) {
     .section__text {
       padding: 7rem 12rem; } }
   @media (max-width: 37.5em) {
     .section__text {
-      padding: 5rem; } }
+      padding: 5rem 1rem; } }
 
 .section__project {
-  background-image: url("/img/imgBg/vision.jpg");
+  background-image: url("/img/imgBg/hojas.jpg");
   border-radius: 10px;
   position: relative;
   padding: 5rem 0;
