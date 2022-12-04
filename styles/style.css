@@ -144,7 +144,7 @@ body {
   border-radius: 3px;
   gap: 1.5rem;
   margin-bottom: 5rem;
-  background-color: #eee; }
+  background-color: #332233; }
   @media (max-width: 56.25em) {
     .container__project {
       margin: 0;
@@ -199,7 +199,7 @@ body {
       margin: 0; } }
 
 .project__content {
-  background-color: #eee;
+  color: #fff;
   padding: 0 1.5rem; }
   @media (max-width: 56.25em) {
     .project__content {

@@ -34,7 +34,12 @@
   }
 }
 
+$colorProject : rgba(#323 ,1);
+@mixin terra {
+   background-image: url('/img/imgBg/tierra.jpg');  
 
+}
+$bgProject: #fff;
 .container__project{
    /* border: 2px solid red; */
    display: flex;
@@ -48,9 +53,10 @@
    padding-bottom: 1rem;
    border-radius: 3px;
    // padding: 1rem .4rem;
+
    gap: 1.5rem;
    margin-bottom: 5rem;
-   background-color: #eee;
+   background-color: $colorProject;
 
    @include respond(ipad){
          margin: 0;
@@ -118,7 +124,8 @@
    
    .project{
       &__content{
-         background-color: #eee;
+         // background-color: $colorProject;
+         color: $bgProject;
          padding: 0 1.5rem;
          @include respond(ipad){
             padding: 0;
