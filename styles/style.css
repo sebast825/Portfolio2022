@@ -32,15 +32,27 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
-  gap: 1rem; }
+  gap: 1rem;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  text-shadow: 0 0 5px black; }
+  @media (max-width: 37.5em) {
+    .open__content {
+      justify-content: flex-start;
+      margin-top: 10rem; } }
   .open__content--tittle {
     font-size: 5rem;
-    color: #fff;
-    text-shadow: 0 0 5px black; }
+    color: #fff; }
+    @media (max-width: 37.5em) {
+      .open__content--tittle {
+        font-size: 2rem; } }
   .open__content--subTittle {
     font-size: 1.5rem;
-    color: #fff;
-    text-shadow: 0 0 5px black; }
+    color: #fff; }
+    @media (max-width: 37.5em) {
+      .open__content--subTittle {
+        font-size: 1rem; } }
 
 .background,
 .foreground,
@@ -113,7 +125,7 @@ body {
   font-family: 'Rock Salt', cursive; }
   @media (max-width: 37.5em) {
     .container__tittle {
-      font-size: 3rem; } }
+      font-size: 2rem; } }
 
 .proyectos {
   position: relative;
@@ -308,8 +320,8 @@ body {
   .section__open h2 {
     font-size: 1.5rem; }
   @media (max-width: 37.5em) {
-    .section__open {
-      font-size: .3rem; } }
+    .section__open h1 {
+      font-size: 3rem; } }
 
 .section__text {
   width: 100%;
@@ -333,10 +345,16 @@ body {
       padding: 7rem 12rem; } }
   @media (max-width: 37.5em) {
     .section__text {
-      padding: 5rem 1rem; } }
+      padding: 5rem 1rem;
+      font-size: 2rem; }
+      .section__text h2 {
+        line-height: 4rem; } }
   .section__text p {
     font-family: 'Roboto', sans-serif;
-    margin: 1rem; }
+    margin: 1rem 0; }
+    @media (max-width: 37.5em) {
+      .section__text p {
+        font-size: 1rem; } }
 
 .section__project {
   background-image: url("/img/imgBg/hojas4.jpg");
@@ -353,7 +371,7 @@ body {
       height: auto;
       margin: 0;
       width: 100vw;
-      padding-bottom: 15rem; } }
+      padding-bottom: 7rem; } }
 
 .section__teconology {
   background-color: #000;

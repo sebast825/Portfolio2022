@@ -9,7 +9,7 @@
    &__title{
       text-transform: uppercase;
       font-size: $section-tittle;
-
+     
    }
    &__subtitle{
       font-size: $section-subtittle;
@@ -17,17 +17,31 @@
    &__content{
       display: flex;
       flex-direction: column;
-text-align: center;
-gap: 1rem;
+         text-align: center;
+         gap: 1rem;
+         width: 100vw;
+         height: 100vh;
+         justify-content: center;
+         text-shadow: 0 0 5px black;
+
+         @include respond (phone){
+            justify-content: flex-start;
+            margin-top: 10rem;
+
+         }
       &--tittle{
          font-size: 5rem;
          color: #fff;
-         text-shadow: 0 0 5px black;
+         @include respond (phone){
+            font-size:$section-tittle--phone;
+         }
       }
       &--subTittle{
          font-size: 1.5rem;
          color: #fff;
-         text-shadow: 0 0 5px black;
+         @include respond (phone){
+            font-size:1rem;
+         }
       }
    }
 }
