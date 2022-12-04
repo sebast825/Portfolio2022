@@ -251,6 +251,31 @@ body {
   justify-content: center;
   flex-direction: column; }
 
+.tecnology--item {
+  width: 9rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center; }
+  .tecnology--item i {
+    font-size: 6rem; }
+  .tecnology--item p {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    opacity: 0;
+    transition: .5s all ease;
+    font-size: 1.3rem; }
+  .tecnology--item:hover i {
+    opacity: .3; }
+  .tecnology--item:hover p {
+    top: 50%;
+    opacity: 1;
+    text-shadow: 0 0 1px black; }
+
 .section__open {
   position: relative;
   display: flex;
@@ -305,3 +330,14 @@ body {
       margin: 0;
       width: 100vw;
       padding-bottom: 15rem; } }
+
+.section__teconology {
+  background-color: green;
+  display: flex;
+  flex-direction: column; }
+  .section__teconology--content {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 2rem; }

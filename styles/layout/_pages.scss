@@ -81,3 +81,18 @@
              
    }
 }
+
+.section__teconology{
+   background-color: green;
+   display: flex;
+   flex-direction: column;
+   &--content{
+      display: flex;
+      justify-content: center;
+      // flex-direction: column;
+      align-content: center;
+      flex-wrap: wrap;
+    gap: 2rem;
+   }
+
+}
