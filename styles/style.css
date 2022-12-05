@@ -164,9 +164,8 @@ body {
     .container__project {
       margin: 0;
       padding-bottom: 0;
-      max-width: 600px;
+      width: auto;
       max-height: unset;
-      flex-direction: row;
       gap: 1.5rem; } }
   @media (max-width: 37.5em) {
     .container__project {
@@ -186,9 +185,7 @@ body {
   overflow: hidden; }
   @media (max-width: 56.25em) {
     .project__img {
-      min-width: 16rem;
-      max-width: 16rem;
-      height: 17rem; } }
+      min-width: 16rem; } }
   @media (max-width: 37.5em) {
     .project__img {
       min-width: 100%;

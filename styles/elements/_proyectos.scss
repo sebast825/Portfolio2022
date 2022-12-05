@@ -66,9 +66,10 @@ $bgProject: #fff;
    @include respond(ipad){
          margin: 0;
          padding-bottom: 0;
-          max-width: 600px; 
+         // max-width: 600px;
+         width: auto; 
           max-height: unset;
-          flex-direction:row;
+         //   flex-direction:row;
           gap: 1.5rem;
       
    }
@@ -96,8 +97,8 @@ $bgProject: #fff;
      overflow: hidden;
      @include respond(ipad){
          min-width: 16rem;
-         max-width: 16rem;
-         height: 17rem;
+         // max-width: 16rem;
+         // height: 17rem;
      }
      @include respond(phone){
       min-width: 100%;
