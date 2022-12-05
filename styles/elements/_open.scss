@@ -1,11 +1,7 @@
 
+
 .open{
-   &__text{
-      
-         // font-size: $fontBig;
-      
-      
-   }
+
    &__title{
       text-transform: uppercase;
       font-size: $section-tittle;
@@ -18,27 +14,29 @@
       display: flex;
       flex-direction: column;
          text-align: center;
-         gap: 1rem;
+         // gap: 1rem;
          width: 100vw;
          height: 100vh;
          justify-content: center;
          text-shadow: 0 0 5px black;
 
          @include respond (phone){
-            justify-content: flex-start;
-            margin-top: 10rem;
+            // justify-content: flex-start;
+            // margin-top: 10rem;
 
          }
       &--tittle{
          font-size: 5rem;
-         color: #fff;
+         color: $colorSecondary;
          @include respond (phone){
             font-size:$section-tittle--phone;
+            line-height: 5rem;
          }
       }
       &--subTittle{
          font-size: 1.5rem;
-         color: #fff;
+         color: $colorSecondary;
+         margin-bottom: 2rem;
          @include respond (phone){
             font-size:1rem;
          }
@@ -133,4 +131,17 @@
 height: 1rem;
 width: 100%;
 background-color: #1A1E0D;
+}
+
+.container__icons{
+   display: flex;
+   justify-content: center;
+   gap: 2rem;
+   i{
+      font-size: 3rem;
+      color: $colorTertiary;
+      text-shadow: 0 0 5px black;     &:hover{
+         color: $colorSecondary;
+      }
+   }
 }
