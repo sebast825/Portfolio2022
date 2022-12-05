@@ -25,15 +25,20 @@
    margin: auto;
 
   @include respond(desktop){
-   grid-template-columns: 1fr;
-   width: 100vw;
-   
-   gap: 2rem;
 
+   width: 90vw;
+
+
+    gap: 2rem;
+
+  }
+  @include respond (ipad){
+   grid-template-columns: 1fr;
+gap: 3rem;
   }
   @include respond(phone){
    width: 90vw;
-   
+
    gap: 5rem;
 
   }
