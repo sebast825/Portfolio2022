@@ -44,7 +44,7 @@ gap: 3rem;
   }
 }
 
-$colorProject : rgba(#323 ,1);
+$colorProject : rgba(#fff ,1);
 @mixin terra {
    background-image: url('/img/imgBg/tierra.jpg');  
 
@@ -63,7 +63,7 @@ $bgProject: #fff;
    padding-bottom: 1rem;
    border-radius: 3px;
    // padding: 1rem .4rem;
-
+overflow: hidden;
    gap: 1.5rem;
    margin-bottom: 5rem;
    background-color: $colorProject;
@@ -97,7 +97,7 @@ $bgProject: #fff;
       max-width: 100%;
      height: 18rem;
    //   margin: auto .5rem;
-     border-radius: 3px;
+ 
      position: relative;
      overflow: hidden;
      @include respond(ipad){
@@ -136,7 +136,7 @@ $bgProject: #fff;
    .project{
       &__content{
          // background-color: $colorProject;
-         color: $bgProject;
+         color: $colorPrimary;
          padding: 0 1.5rem;
          p{
             font-size: 1.1rem;
@@ -169,7 +169,7 @@ $bgProject: #fff;
       }
       &__tecnology span{
          padding: .2rem;
-         color: #ddd;
+         color: $colorPrimary;
       transform: scale(.9);
       transition: transfrom .2s ease;
       @include fontUno;
@@ -189,7 +189,8 @@ $bgProject: #fff;
          
       }
       &__link :hover{
-         color: #fff;
+         color: #888;
+        
       }
       &__link--github{
          transform: scale(1.3);
@@ -198,7 +199,7 @@ $bgProject: #fff;
       &__link a{
          text-decoration: underline; 
          text-transform: none;
-         color: #ddd;
+         color: $colorPrimary;
          font-family: 'Roboto', sans-serif;
 
        }

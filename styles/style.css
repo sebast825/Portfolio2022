@@ -168,9 +168,10 @@ body {
   margin-bottom: 2rem;
   padding-bottom: 1rem;
   border-radius: 3px;
+  overflow: hidden;
   gap: 1.5rem;
   margin-bottom: 5rem;
-  background-color: #332233; }
+  background-color: white; }
   @media (max-width: 56.25em) {
     .container__project {
       margin: 0;
@@ -191,7 +192,6 @@ body {
 .project__img {
   max-width: 100%;
   height: 18rem;
-  border-radius: 3px;
   position: relative;
   overflow: hidden; }
   @media (max-width: 56.25em) {
@@ -222,7 +222,7 @@ body {
       margin: 0; } }
 
 .project__content {
-  color: #fff;
+  color: #000;
   padding: 0 1.5rem; }
   .project__content p {
     font-size: 1.1rem; }
@@ -252,7 +252,7 @@ body {
 
 .project__tecnology span {
   padding: .2rem;
-  color: #ddd;
+  color: #000;
   transform: scale(0.9);
   transition: transfrom .2s ease;
   font-family: 'Rock Salt', cursive; }
@@ -267,7 +267,7 @@ body {
   padding: 1rem 0; }
 
 .project__link :hover {
-  color: #fff; }
+  color: #888; }
 
 .project__link--github {
   transform: scale(1.3); }
@@ -275,7 +275,7 @@ body {
 .project__link a {
   text-decoration: underline;
   text-transform: none;
-  color: #ddd;
+  color: #000;
   font-family: 'Roboto', sans-serif; }
 
 .project__content {
@@ -366,7 +366,7 @@ body {
         font-size: 1rem; } }
 
 .section__project {
-  background-image: url("/img/imgBg/hojas4.jpg");
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/img/imgBg/hojas4.jpg");
   position: relative;
   padding: 5rem 0;
   width: 100%;

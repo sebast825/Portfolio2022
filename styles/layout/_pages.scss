@@ -65,7 +65,12 @@ h2{
 }
 
 .section__project{
-   background-image: url('/img/imgBg/hojas4.jpg');  
+   background-image: linear-gradient(
+		to right bottom, 
+	rgba(black,.6),
+	rgba(black,.6)),
+	url('/img/imgBg/hojas4.jpg');
+   // background-image :	url('/img/imgBg/hojas4.jpg'); 
    position: relative;
    padding: 5rem 0;
    width:100%;
