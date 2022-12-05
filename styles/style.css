@@ -342,13 +342,14 @@ body {
     font-family: 'Rock Salt', cursive; }
   @media (max-width: 56.25em) {
     .section__text {
-      padding: 7rem 12rem; } }
+      padding: 7rem 4rem; } }
   @media (max-width: 37.5em) {
     .section__text {
       padding: 5rem 1rem;
-      font-size: 2rem; }
+      gap: 1rem; }
       .section__text h2 {
-        line-height: 4rem; } }
+        line-height: 3rem;
+        font-size: 1.5rem; } }
   .section__text p {
     font-family: 'Roboto', sans-serif;
     margin: 1rem 0; }

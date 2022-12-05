@@ -45,13 +45,14 @@ h2{
 }
    font-size: $fontMedium;  
    @include respond (ipad){
-      padding: 7rem 12rem;
+      padding: 7rem 4rem;
    }
    @include respond (phone){
       padding: 5rem 1rem ;
-      font-size: 2rem;
+      gap: 1rem;
     h2{
-      line-height: 4rem;
+      line-height: 3rem;
+      font-size: 1.5rem;
     }
    }
   p{
