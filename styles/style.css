@@ -254,7 +254,7 @@ body {
   padding: .2rem;
   color: #000;
   transform: scale(0.9);
-  transition: transfrom .2s ease;
+  transition: all .1s ease;
   font-family: 'Rock Salt', cursive; }
   .project__tecnology span:hover {
     transform: rotate(5deg); }
@@ -270,7 +270,7 @@ body {
   color: #888; }
 
 .project__link--github {
-  transform: scale(1.3); }
+  transform: scale(1.7); }
 
 .project__link a {
   text-decoration: underline;
