@@ -137,16 +137,16 @@ body {
 
 .proyectos {
   position: relative;
-  width: 70vw;
+  width: 100%;
   height: 100%;
+  padding: 0 15%;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 0.5fr);
   justify-items: center;
   justify-content: center;
   margin: auto; }
   @media (max-width: 75em) {
     .proyectos {
-      width: 90vw;
       gap: 2rem; } }
   @media (max-width: 56.25em) {
     .proyectos {
@@ -154,7 +154,6 @@ body {
       gap: 3rem; } }
   @media (max-width: 37.5em) {
     .proyectos {
-      width: 90vw;
       gap: 5rem; } }
 
 .container__project {
@@ -182,6 +181,8 @@ body {
   @media (max-width: 37.5em) {
     .container__project {
       gap: 0rem;
+      min-width: 95vw;
+      max-width: 95vw;
       padding-bottom: .5rem;
       width: auto;
       box-shadow: 0px 2px 7px -4px   black;
@@ -248,7 +249,8 @@ body {
 .project__tecnology {
   display: flex;
   /* width: 100vw; */
-  justify-content: center; }
+  justify-content: center;
+  flex-wrap: wrap; }
 
 .project__tecnology span {
   padding: .2rem;
