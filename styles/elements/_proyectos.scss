@@ -171,7 +171,7 @@ overflow: hidden;
          padding: .2rem;
          color: $colorPrimary;
       transform: scale(.9);
-      transition: transfrom .2s ease;
+      transition: all .1s ease;
       @include fontUno;
          &:hover{
             transform: rotate(5deg);
@@ -193,7 +193,7 @@ overflow: hidden;
         
       }
       &__link--github{
-         transform: scale(1.3);
+         transform: scale(1.7);
        
       }
       &__link a{
