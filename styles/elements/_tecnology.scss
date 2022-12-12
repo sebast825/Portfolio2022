@@ -10,6 +10,8 @@
    text-align: center;
    img,i{
       filter: invert(1);
+      transition: .2s all ease;
+
    }
    img{
       object-fit: cover;

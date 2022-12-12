@@ -237,6 +237,7 @@ body {
 .project__tittle h3 {
   font-size: 2rem;
   margin-bottom: .3rem;
+  color: #000;
   font-family: 'Rock Salt', cursive; }
 
 @media (max-width: 37.5em) {
@@ -257,6 +258,7 @@ body {
   color: #000;
   transform: scale(0.9);
   transition: all .1s ease;
+  color: #000;
   font-family: 'Rock Salt', cursive; }
   .project__tecnology span:hover {
     transform: rotate(5deg); }
@@ -294,7 +296,8 @@ body {
   align-content: center;
   text-align: center; }
   .tecnology--item img, .tecnology--item i {
-    filter: invert(1); }
+    filter: invert(1);
+    transition: .2s all ease; }
   .tecnology--item img {
     object-fit: cover;
     filter: brightness(0), invert(1); }

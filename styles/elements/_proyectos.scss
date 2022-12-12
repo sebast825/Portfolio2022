@@ -6,7 +6,6 @@
    font-size: $section-tittle;
    color: white;
    text-shadow: 0 0px 1px #000;
-
    @include fontUno;
    
    @include respond(phone){
@@ -149,6 +148,8 @@ overflow: hidden;
       &__tittle h3{
          font-size: 2rem;
          margin-bottom: .3rem;
+         color: $colorPurprle;
+         // color: #000;
          @include fontUno;
       }
       @include respond(phone){
@@ -171,6 +172,8 @@ overflow: hidden;
          color: $colorPrimary;
       transform: scale(.9);
       transition: all .1s ease;
+      color: $colorPurprle;
+      // color: #000;
       @include fontUno;
          &:hover{
             transform: rotate(5deg);
@@ -189,6 +192,7 @@ overflow: hidden;
       }
       &__link :hover{
          color: #888;
+         // color: $colorPurprle;
         
       }
       &__link--github{
