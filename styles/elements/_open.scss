@@ -18,7 +18,7 @@
          width: 100vw;
          height: 100vh;
          justify-content: center;
-         text-shadow: 0 0 5px black;
+         text-shadow: 0 0 15px black;
 
          @include respond (phone){
             // justify-content: flex-start;
@@ -28,6 +28,8 @@
       &--tittle{
          font-size: 5rem;
          color: $colorSecondary;
+         font-weight: 500;
+         // margin-bottom: -1rem;
          @include respond (phone){
             font-size:$section-tittle--phone;
             line-height: 5rem;
@@ -140,8 +142,14 @@ background-color: #1A1E0D;
    i{
       font-size: 3rem;
       color: $colorTertiary;
-      text-shadow: 0 0 5px black;     &:hover{
+      text-shadow: 0 0 5px black; 
+      transition: all .2s ease ;
+      position: relative;
+
+    
+      &:hover{
          color: $colorSecondary;
+         top: -1px;
       }
    }
 }
