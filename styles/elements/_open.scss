@@ -142,8 +142,14 @@ background-color: #1A1E0D;
    i{
       font-size: 3rem;
       color: $colorTertiary;
-      text-shadow: 0 0 5px black;     &:hover{
+      text-shadow: 0 0 5px black; 
+      transition: all .2s ease ;
+      position: relative;
+
+    
+      &:hover{
          color: $colorSecondary;
+         top: -1px;
       }
    }
 }

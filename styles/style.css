@@ -120,9 +120,12 @@ body {
   .container__icons i {
     font-size: 3rem;
     color: #ddd;
-    text-shadow: 0 0 5px black; }
+    text-shadow: 0 0 5px black;
+    transition: all .2s ease;
+    position: relative; }
     .container__icons i:hover {
-      color: #fff; }
+      color: #fff;
+      top: -1px; }
 
 .container__tittle {
   width: 100vw;
@@ -427,3 +430,8 @@ body {
     @media (max-width: 56.25em) {
       .section__teconology--content {
         padding: 0rem 0rem; } }
+
+footer {
+  background-color: #000;
+  border-top: 1px solid white;
+  padding: 3rem; }
