@@ -296,12 +296,19 @@ body {
   justify-content: center;
   align-content: center;
   text-align: center; }
+  @media (max-width: 56.25em) {
+    .tecnology--item {
+      flex-direction: column; } }
   .tecnology--item img, .tecnology--item i {
     filter: invert(1);
     transition: .2s all ease; }
   .tecnology--item img {
     object-fit: cover;
     filter: brightness(0), invert(1); }
+    @media (max-width: 56.25em) {
+      .tecnology--item img {
+        max-height: 138px;
+        object-fit: contain; } }
   .tecnology--item i {
     font-size: 6rem; }
   .tecnology--item p {
@@ -313,12 +320,24 @@ body {
     opacity: 0;
     transition: .5s all ease;
     font-size: 1.3rem; }
+    @media (max-width: 56.25em) {
+      .tecnology--item p {
+        position: relative;
+        opacity: 1;
+        transform: translate(0);
+        top: 0;
+        left: 0; } }
   .tecnology--item:hover img, .tecnology--item:hover i {
     opacity: .2; }
   .tecnology--item:hover p {
     top: 50%;
     opacity: 1;
     text-shadow: 0 0 1px black; }
+  @media (max-width: 56.25em) {
+    .tecnology--item:hover img, .tecnology--item:hover i {
+      opacity: 1; }
+    .tecnology--item:hover p {
+      top: 0; } }
 
 .section__open {
   position: relative;

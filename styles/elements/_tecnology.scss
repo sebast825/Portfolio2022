@@ -8,6 +8,10 @@
    justify-content: center;
    align-content: center;
    text-align: center;
+   @include respond (ipad){
+      flex-direction: column;
+
+   }
    img,i{
       filter: invert(1);
       transition: .2s all ease;
@@ -16,11 +20,15 @@
    img{
       object-fit: cover;
        filter: brightness(0),invert(1);
+       @include respond(ipad){
+         max-height: 138px;
+         object-fit: contain;
+      }
        
    }
    i{
   font-size: 6rem;
- 
+  
    }
    p{
       position: absolute;
@@ -32,6 +40,13 @@
       opacity: 0;
       transition: .5s all ease;
       font-size: 1.3rem;
+      @include respond(ipad){
+         position: relative;
+         opacity: 1;
+         transform: translate(0);
+         top: 0;
+         left: 0;
+      }
    }
    &:hover{
       img,i{
@@ -42,6 +57,16 @@
          top: 50%;
          opacity: 1;
          text-shadow: 0 0 1px black;
+      }
+     }
+     @include respond (ipad){
+      &:hover{
+         img,i{
+            opacity: 1;
+         }
+         p{
+            top: 0;
+         }
       }
      }
 }
