@@ -231,7 +231,6 @@ body {
   color: #000;
   padding: 0 1.5rem;
   display: flex;
-  justify-content: center;
   flex-direction: column; }
   .project__content p {
     font-size: 1.1rem; }
