@@ -134,6 +134,10 @@ overflow: hidden;
          // background-color: $colorProject;
          color: $colorPrimary;
          padding: 0 1.5rem;
+         display: flex;
+         justify-content: center;
+         flex-direction: column;
+  
          p{
             font-size: 1.1rem;
 
@@ -159,6 +163,7 @@ overflow: hidden;
       }
       &__description p{
          margin: .5rem 0;
+         font-size: 1.2rem;
       }
       &__tecnology{
          display: flex;
@@ -203,14 +208,11 @@ overflow: hidden;
          text-decoration: underline; 
          text-transform: none;
          color: $colorPrimary;
-         font-family: 'Roboto', sans-serif;
+         font-size: 1.1rem;
+         font-family: 'Ibarra Real Nova', serif;
 
        }
-       &__content{
-         display: flex;
-         justify-content: center;
-         flex-direction: column;
-      }
+     
    }
 
    
