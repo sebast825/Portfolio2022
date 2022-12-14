@@ -11,8 +11,9 @@
    transform-style: preserve-3d;
    z-index: -1;
 @include fontUno;
-   h2{
+   h4{
       font-size: 1.5rem ;
+     
    }
    @include respond (phone){
       
@@ -31,7 +32,7 @@
    justify-content: center;
    text-align: center;
    padding: 10rem 20rem ;
-   gap: 2rem;
+   gap: 1rem;
    // background-image: url('/img/imgBg/hojas.jpg');  
    // filter: brightness(.2);
    background-size: cover;
@@ -42,6 +43,7 @@
 // filter: blur(3px);
 h2{
    @include fontUno;
+   font-size: 3rem;
 }
    font-size: $fontMedium;  
    @include respond (ipad){
@@ -56,7 +58,8 @@ h2{
     }
    }
   p{
-   font-family: 'Roboto', sans-serif;
+   // font-family: 'Roboto', sans-serif;
+   font-size: 1.5rem;
    margin: 1rem 0;
    @include respond(phone){
       font-size: 1rem;
