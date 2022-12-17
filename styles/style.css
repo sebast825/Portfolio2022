@@ -441,3 +441,10 @@ footer {
   background-color: #000;
   border-top: 1px solid white;
   padding: 3rem; }
+
+.preloader {
+  background: #000;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 1000; }
