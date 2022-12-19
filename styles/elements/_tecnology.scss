@@ -12,6 +12,11 @@
       flex-direction: column;
 
    }
+   a{
+      text-decoration: none;
+      text-transform: none;
+      color: black;
+   }
    img,i{
       filter: invert(1);
       transition: .2s all ease;

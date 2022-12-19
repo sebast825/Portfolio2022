@@ -305,6 +305,10 @@ body {
   @media (max-width: 56.25em) {
     .tecnology--item {
       flex-direction: column; } }
+  .tecnology--item a {
+    text-decoration: none;
+    text-transform: none;
+    color: black; }
   .tecnology--item img, .tecnology--item i {
     filter: invert(1);
     transition: .2s all ease; }
