@@ -1,1 +1,309 @@
 node_modules
+
+<div class="wrapper">
+      <section class="section__open">
+
+            <!-- <div class="capaFondo capaFondoUno"></div> -->
+            <img src="/img/imgBg/stars.jpg"class="background">
+            <img src="/img/imgBg/mountains.png" class="backgroundMiddle">
+            <img src="/img/imgBg/trees.png" class="foreground">
+            <div class="open__content">
+            <h1 class="open__content--tittle">Sebastián Molina</h1>
+            <h4 class="open__content--subTittle">Desarrollador Front End</h4>
+
+            <div class="container__icons" style="color:white">
+        
+               <a href="https://www.linkedin.com/in/sebastian-molina97/" target="_blank"><i class="fab fa-linkedin"></i></a>
+               <a href="https://github.com/sebast825"target="_blank"><i class="fab fa-github"></i></a>
+              </div>     
+               </div> 
+       
+              
+         <!-- <div class="open__text">
+            <div class="open__title ">
+               <h1 class="">Sebastián Molina</h1>
+   
+            </div>
+            <div class="open__subtitle">
+               <h2 class="">Desarrollador Front End</h2>
+   
+            </div>
+          
+         </div>
+         <div class="open__btn containerBtn">
+            <a href="#" class="menu_btn_Css">Diseños</a>
+         </div> -->
+      </section>
+      <!-- <div class="div"></div> -->
+      <section class="section__text">
+         <!-- <img src="/img/imgBg/hojas.jpg"class="section__text--foto"> -->
+         <!-- <div class=" capaFondo imgFondo"></div> -->
+         <!-- <div class="capaFondo capaFondoDos"></div> -->
+   
+            <h2>Apasionado por el diseño. </h2>
+            <div class="title--semiMedium">
+          
+               <p class="">Busco presentar la información de una manera llamativa y dinámica; en donde explorar el contenido se transforme en una aventura.</p>
+  
+
+               
+            <p>Tengo experiencia en diseño de sitios web y logos. Me interesa seguir aprendiendo React y Node Js.</p>
+         </div>
+         
+       
+       </section>
+       
+   <section id="section__project" class="section__project">
+       
+
+      <div class="container__tittle">
+         <h2 class="sectionProject__tittle">Proyectos</h2>
+      </div>
+       
+         <div class="proyectos">
+         <div class="container__project">
+            <div class="project__img">
+               <a href="https://battleshipsm.netlify.app/" target="_blank">
+                  <img src="img/imgProyectos/bgShip (3).jpg" alt="No disponible">
+
+               </a>
+            </div>
+            <div class="project__content">
+                  <div class="project__tittle">
+                     <h3>Batalla Naval</h3>
+                  </div>
+                  <div class="project__description">
+                     <p>Los mayores desafios que tuve fueron, la validación del correcto posicionamiento de los barcos y el desarrollo del algoritmo para que juegue la maquina.</p>
+                     <p>Para superar estos desafios aprendí a usar el debugger y Jest para realizar pruebas unitarias.</p>
+                  </div>
+                  <div class="project__tecnology">
+                     <span>Html</span>
+                     <span>Sass</span>
+                     <span>JavaScript</span>
+                     <span>Gsap</span>
+                     <span>Jest</span>
+                  </div>
+                  <div class="project__link">
+                     <div class="project__link--github">
+                        <a href="https://github.com/sebast825/Batalla-Naval" target="_blank"><i class="fab fa-github"></i></a>
+                     </div>
+                     <div class="project__link--demo">
+
+                        <a href="https://battleshipsm.netlify.app/" target="_blank">Ver Demo</a>
+                     </div>
+                     <div class="project__link--extra">
+                        <a href="https://drive.google.com/file/d/1ha6VqVEG3of455Nd5hVLtAmWdQSHTCkc/view?usp=sharing" target="_blank">+ Info</a>
+                     </div>
+                  </div>
+
+            </div>
+
+         </div>
+
+         <div class="container__project">
+            <div class="project__img">
+               <a href="https://elegircolor2.netlify.app" target="_blank">
+                  <img src="img/imgProyectos/elegirColor.jpg" alt="No disponible">
+               </a>
+            </div>
+            <div class="project__content">
+                  <div class="project__tittle">
+                     <h3>Elegir Color</h3>
+                  </div>
+                  <div class="project__description">
+                     <p>Selecciona entre 3 modos de juego distintos en donde se ponen a prueba tu velocidad y reflejos!</p>
+                     <p>Aprendí como utilizar Poo en JavaScript y la libreria Gsap para realizar animaciones.</p>
+                  </div>
+                  <div class="project__tecnology">
+                     <span>Html</span>
+                     <span>CSS</span>
+                     <span>JavaScript</span>
+                     <span>Gsap</span>
+                  </div>
+                  <div class="project__link">
+                     <div class="project__link--github">
+                        <a href="https://github.com/sebast825/Juego-ElegirColor/tree/class" target="_blank"><i class="fab fa-github"></i></a>
+                     </div>
+                     <div class="project__link--demo">
+
+                        <a href="https://elegircolor2.netlify.app" target="_blank">Ver Demo</a>
+                     </div>
+                     <div class="project__link--extra"></div>
+                  </div>
+            </div>
+         </div>
+
+         <div class="container__project">
+            <div class="project__img">
+               <a href="https://pokeapi-sm.netlify.app/" target="_blank">
+                  <img src="img/imgProyectos/pokebola.jpg" alt="No disponible">
+               </a>
+            </div>
+            <div class="project__content">
+                  <div class="project__tittle">
+                     <h3>Poke Api</h3>
+                  </div>
+                  <div class="project__description">
+                     <p>Elegí un pokemon y conoce sus estadisticas!</p>
+                     <p>Aprendi como realizar pedidos a una Api y el uso de expresiones regulares para filtrar opciones de manera dinámica.</p>
+                  </div>
+                  <div class="project__tecnology">
+                     <span>Html</span>
+                     <span>CSS</span>
+                     <span>JavaScript</span>                      
+                  </div>
+                  <div class="project__link">
+                     <div class="project__link--github">
+                        <a href="https://github.com/sebast825/PokeApi/tree/develop"target="_blank"><i class="fab fa-github"></i></a>
+                     </div>
+                     <div class="project__link--demo">
+                        <a href="https://pokeapi-sm.netlify.app/" target="_blank">Ver Demo</a>
+                     </div>
+                     <div class="project__link--extra"></div>
+                  </div>
+            </div>
+         </div>
+         
+         <div class="container__project">
+            <div class="project__img">
+               <a href="https://sebast825.github.io/doList/" target="_blank">
+                  <img src="img/imgProyectos/notas.jpg" alt="No disponible">
+               </a>
+
+            </div>
+            <div class="project__content">
+                  <div class="project__tittle">
+                     <h3>To Do List</h3>
+                  </div>
+                  <div class="project__description">
+                     <p>Crea tareas y proyectos. Los podés filtrar dependiendo lo que necesites: Todas las tareas, para entregar hoy o por proyecto </p>
+                     <p>Aprendi como usar Webpack de Node y como almacenar información en el Local Storage.</p>
+                  </div>
+                  <div class="project__tecnology">
+                     <span>Html</span>
+                     <span>CSS</span>
+                     <span>JavaScript</span>
+                     <span>Node Js</span>                        
+                  </div>
+                  <div class="project__link">
+                     <div class="project__link--github">
+                        <a href="https://github.com/sebast825/doList"target="_blank"><i class="fab fa-github"></i></a>
+                     </div>
+                     <div class="project__link--demo">
+                        <a href="https://sebast825.github.io/doList/" target="_blank">Ver Demo</a>
+                     </div>
+                     <div class="project__link--extra"></div>
+                  </div>
+            </div>
+         </div>
+
+         <div class="container__project">
+            <div class="project__img">
+               <a href="https://natours-sm.netlify.app/" target="_blank">
+                  <img src="img/imgProyectos/natours.jpg" alt="No disponible">
+               </a>
+                  </div>
+            <div class="project__content">
+                  <div class="project__tittle">
+                     <h3>Natours</h3>
+                  </div>
+                  <div class="project__description">
+                     <p>Un sitio web responsive, lo realicé en el curso Advance CSS and Sass de ZTM Academy  </p>
+                     <p>Aprendi modelo de arquitectura de proyectos para diseño web.</p>
+                  </div>
+                  <div class="project__tecnology">
+                     <span>Html</span>
+                     <span>Sass</span>
+                     <span>Node Js</span>                                           
+                  </div>
+                  <div class="project__link">
+                     <div class="project__link--github">
+                        <a href="https://github.com/sebast825/Natours"target="_blank"><i class="fab fa-github"></i></a>
+                     </div>
+                     <div class="project__link--demo">
+                        <a href="https://natours-sm.netlify.app/" target="_blank">Ver Demo</a>
+                     </div>
+                     <div class="project__link--extra"></div>
+                  </div>
+            </div>
+         </div>
+               
+      </div>
+   </section> 
+
+   <section id="medio" class="section__teconology">
+        
+
+      <div class="container__tittle"> 
+      <h2 >Tecnologías</h2>       
+      </div>
+      <div class="section__teconology--content">
+          <div class="tecnology--item">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+               <i class="fab fa-js"></i><p>JavaScript</p>
+            </a>
+         </div>
+         <div class="tecnology--item">
+            <a href="https://nodejs.org/en/docs/" target="_blank">
+               <i class="fab fa-node"></i><p>NodeJs</p>
+            </a>
+         </div>
+    
+         <div class="tecnology--item">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">
+               <i class="fab fa-html5"></i><p>Html</p>
+            </a>
+         </div>
+         <div class="tecnology--item">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">
+               <i class="fab fa-css3-alt"></i><p>Css</p>
+            </a>
+         </div>
+         <div class="tecnology--item">
+            <a href="https://getbootstrap.com/docs/4.1/getting-started/introduction/" target="_blank">
+               <i class="fab fa-bootstrap"></i><p>Boostrap</p>
+            </a>
+         </div>
+         <div class="tecnology--item">
+            <a href="https://sass-lang.com/documentation/" target="_blank">
+               <i class="fab fa-sass"></i><p>Sass</p>
+            </a>
+         </div>
+         <div class="tecnology--item">
+            <a href="https://jestjs.io/docs/getting-started" target="_blank">
+               <img src="./img/icons/jest.png" alt="jest"><p>Jest</p>
+            </a>
+         </div>
+         <div class="tecnology--item">
+            <a href="https://www.php.net/docs.php" target="_blank">
+               <img src="./img/icons/php.png" alt="php"><p>Php</p>
+            </a>
+         </div>
+         <div class="tecnology--item">
+            <a href="https://laravel.com/docs/9.x/installation" target="_blank">
+               <img src="./img/icons/laravel.png" alt="laravel"><p>Laravel</p>
+            </a>
+         </div>
+         <div class="tecnology--item">
+            <a href="https://dev.mysql.com/doc/" target="_blank">
+               <img src="./img/icons/mysql.png" alt="mysql"><p>MySQL</p>
+            </a>
+         </div>
+         <div class="tecnology--item">
+            <a href="https://firebase.google.com/docs" target="_blank">
+               <i class="fas fa-database"></i><p>Firebase</p>
+            </a>
+         </div>
+         
+         
+      </div>
+      
+   </section>
+   <footer>
+      <div class="container__icons" style="color:white">
+        
+         <a href="https://www.linkedin.com/in/sebastian-molina97/" target="_blank"><i class="fab fa-linkedin"></i></a>
+         <a href="https://github.com/sebast825"target="_blank"><i class="fab fa-github"></i></a>
+        </div>     
+   </footer>
+</div>

@@ -350,6 +350,77 @@ body {
     .tecnology--item:hover p {
       top: 0; } }
 
+.container--language {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  align-items: center;
+  gap: .2rem; }
+  .container--language::before, .container--language::after {
+    content: "";
+    width: 2.5rem;
+    height: 1.5rem;
+    display: block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 3px; }
+  .container--language::before {
+    background-image: url("/img/icons/eeuu.png"); }
+  .container--language::after {
+    background-image: url("/img/icons/argentina2.png"); }
+
+.checkbox {
+  position: absolute;
+  display: none;
+  opacity: 0; }
+  .checkbox:checked ~ .btnSwich::before {
+    transform: translate(22px);
+    background-color: #08f; }
+
+.btnSwich {
+  background-color: #444;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5px;
+  border-radius: 50px;
+  height: 26px;
+  width: 50px;
+  position: relative;
+  transition: all .2s ease-out;
+  cursor: pointer; }
+  .btnSwich::before {
+    content: "";
+    position: absolute;
+    background-color: #f00;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transition: all .3s ease-out;
+    cursor: pointer; }
+
+.btnSwich__option {
+  width: 50%;
+  height: 100%;
+  border-radius: 50%; }
+
+.checkboxTwo {
+  background-color: blue; }
+
+.btnSwich__ball {
+  position: absolute;
+  background-color: red;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  height: 22px;
+  width: 22px;
+  transition: all .2s ease-out;
+  cursor: pointer; }
+
 .section__open {
   position: relative;
   display: flex;
@@ -453,3 +524,10 @@ footer {
   height: 100vh;
   position: fixed;
   z-index: 1000; }
+
+header {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  align-items: flex-end;
+  width: 100%; }
