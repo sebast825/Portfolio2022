@@ -499,13 +499,16 @@ body {
   .section__teconology--tittle {
     font-size: 10rem; }
   .section__teconology--content {
-    padding: 0rem 40rem;
+    padding: 0rem 20rem;
     display: flex;
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
     gap: 2rem;
     background-color: #000; }
+    @media (min-width: 112.5em) {
+      .section__teconology--content {
+        padding: 0rem 40rem; } }
     @media (max-width: 75em) {
       .section__teconology--content {
         padding: 0rem 10rem; } }
