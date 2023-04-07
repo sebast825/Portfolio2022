@@ -1,5 +1,4 @@
-
-.container__tittle{
+.container__tittle {
    width: 100vw;
    text-align: center;
    padding-bottom: 4rem;
@@ -7,45 +6,51 @@
    color: white;
    text-shadow: 0 0px 1px #000;
    @include fontUno;
-   
-   @include respond(phone){
+
+   @include respond(phone) {
       font-size: $section-tittle--phone;
    }
 }
-.proyectos{
+
+.proyectos {
    position: relative;
-    width: 100%;
+   width: 100%;
    height: 100%;
    padding: 0 15%;
    display: grid;
-   grid-template-columns: repeat(2,.5fr);
+   grid-template-columns: repeat(2, .5fr);
    //  align-items: center;
    justify-items: center;
-   justify-content:center;
+   justify-content: center;
    margin: auto;
 
 
-  @include respond(desktop){
-    gap: 2rem;
+   @include respond(desktop) {
+      gap: 2rem;
 
-  }
-  @include respond (ipad){
-   grid-template-columns: 1fr;
-gap: 3rem;
-  }
-  @include respond(phone){
-   gap: 5rem;
+   }
 
-  }
+   @include respond (ipad) {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+   }
+
+   @include respond(phone) {
+      gap: 5rem;
+
+   }
 }
 
-$colorProject : rgba(#fff ,1);
+$colorProject : rgba(#fff, 1);
+
 @mixin terra {
-   background-image: url('/img/imgBg/tierra.jpg');  
+   background-image: url('/img/imgBg/tierra.jpg');
 
 }
+
 $bgProject: #fff;
-.container__project{
+
+.container__project {
    /* border: 2px solid red; */
    display: flex;
    box-shadow: 0px 0px 8px #222;
@@ -58,54 +63,58 @@ $bgProject: #fff;
    padding-bottom: 1rem;
    border-radius: 3px;
    // padding: 1rem .4rem;
-overflow: hidden;
+   overflow: hidden;
    gap: 1.5rem;
    margin-bottom: 5rem;
    background-color: $colorProject;
 
-   @include respond(ipad){
-         margin: 0;
-         padding-bottom: 0;
-         // max-width: 600px;
-         width: auto; 
-          max-height: unset;
-         //   flex-direction:row;
-          gap: 1.5rem;
-      
+   @include respond(ipad) {
+      margin: 0;
+      padding-bottom: 0;
+      // max-width: 600px;
+      width: auto;
+      max-height: unset;
+      //   flex-direction:row;
+      gap: 1.5rem;
+
    }
-   @include respond(phone){
+
+   @include respond(phone) {
       gap: 0rem;
       min-width: 95vw;
       max-width: 95vw;
       padding-bottom: .5rem;
       width: auto;
-      box-shadow: 0px 2px 7px -4px   black;
-      padding:  0;
+      box-shadow: 0px 2px 7px -4px black;
+      padding: 0;
 
       padding-bottom: 1rem;
       flex-direction: column;
-    
+
    }
+}
+
+
+.project__img {
+   max-width: 100%;
+   height: 18rem;
+   //   margin: auto .5rem;
+
+   position: relative;
+   overflow: hidden;
+
+   @include respond(ipad) {
+      min-width: 16rem;
+      // max-width: 16rem;
+      // height: 17rem;
    }
 
-   
-   .project__img{
-      max-width: 100%;
-     height: 18rem;
-   //   margin: auto .5rem;
- 
-     position: relative;
-     overflow: hidden;
-     @include respond(ipad){
-         min-width: 16rem;
-         // max-width: 16rem;
-         // height: 17rem;
-     }
-     @include respond(phone){
+   @include respond(phone) {
       min-width: 100%;
       height: 14rem;
-  }
-     img{
+   }
+
+   img {
       transition: all .2s ease-out;
       height: 5rem;
       position: absolute;
@@ -114,108 +123,127 @@ overflow: hidden;
       box-shadow: 0 0 5px black;
       /* filter: brightness(.8);  */
    }
-   &:hover img{
+
+   &:hover img {
       transform: scale(1.1);
       filter: brightness(80%);
-      
+
    }
-   @include respond(ipad){
-      width: 30rem; 
-      box-shadow: 0px 1px 5px   black;
+
+   @include respond(ipad) {
+      width: 30rem;
+      box-shadow: 0px 1px 5px black;
    }
-   @include respond(phone){
+
+   @include respond(phone) {
       width: inherit;
       margin: 0;
    }
 }
-   
-   .project{
-      &__content{
-         // background-color: $colorProject;
-         color: $colorPrimary;
-         padding: 0 1.5rem;
-         display: flex;
-         flex-direction: column;
-      
-  
-         p{
-            font-size: 1.1rem;
 
-         }
-         @include respond(ipad){
-            padding: 0;
-         }
-         @include respond(ipad){
-            padding: 0 1rem;
-         }
+.project {
+   &__content {
+      // background-color: $colorProject;
+      color: $colorPrimary;
+      padding: 0 1.5rem;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+
+      p {
+         font-size: 1.1rem;
+
       }
-      &__tittle h3{
-         font-size: 2rem;
-         margin-bottom: .3rem;
-         color: $colorPurprle;
-         // color: #000;
-         @include fontUno;
+
+      @include respond(ipad) {
+         padding: 0 1rem;
       }
-      @include respond(phone){
-         &__tittle h3{
-            margin-top: 1.5rem;
-         }
+
+      /*this is for links show at the bottom of the container, but only in desktop, so in mobile and ipad is not a lot of empty space*/
+      @media screen and (min-width: 900px) {
+         height: 280px;
+
       }
-      &__description p{
-         margin: .5rem 0;
-         font-size: 1.2rem;
+   }
+
+   &__tittle h3 {
+      font-size: 2rem;
+      margin-bottom: .3rem;
+      color: $colorPurprle;
+      // color: #000;
+      @include fontUno;
+   }
+
+   @include respond(phone) {
+      &__tittle h3 {
+         margin-top: 1.5rem;
       }
-      &__tecnology{
-         display: flex;
-         /* width: 100vw; */
-         justify-content: center;
-         flex-wrap: wrap;
-         // font-size: .5rem;
-      }
-      &__tecnology span{
-         padding: .2rem;
-         color: $colorPrimary;
+   }
+
+   &__description p {
+      margin: .5rem 0;
+      font-size: 1.2rem;
+   }
+
+   &__tecnology {
+      display: flex;
+      /* width: 100vw; */
+      justify-content: center;
+      flex-wrap: wrap;
+      // font-size: .5rem;
+   }
+
+   &__tecnology span {
+      padding: .2rem;
+      color: $colorPrimary;
       transform: scale(.9);
       transition: all .1s ease;
       color: $colorPurprle;
       // color: #000;
-      @include fontUno;
-         &:hover{
-            transform: rotate(5deg);
-         }
-      
-      }
-      &__link{
-         /* border: 1px solid purple; */
-         display: flex;
-         gap: 1rem;
-         font-weight: 1000;
-         padding: 1rem 0;
- 
- 
-         
-      }
-      &__link :hover{
-         color: #888;
-         // color: $colorPurprle;
-        
-      }
-      &__link--github{
-         transform: scale(1.7);
-       
-      }
-      &__link a{
-         text-decoration: underline; 
-         text-transform: none;
-         color: $colorPrimary;
-         font-size: 1.1rem;
-         font-family: 'Ibarra Real Nova', serif;
 
-       }
-     
+      @include fontUno;
+
+      &:hover {
+         transform: rotate(5deg);
+      }
+
    }
 
-   
- 
-   
+   &__link {
+      /* border: 1px solid purple; */
+      display: flex;
+      gap: 1rem;
+      font-weight: 1000;
+      padding: 1rem 0;
+      /*this is for links show at the bottom of the container, but only in desktop, so in mobile and ipad is not a lot of empty space*/
 
+      @media screen and (min-width: 900px) {
+         position: absolute;
+         bottom: 0;
+         left: 1.5rem;
+      }
+
+
+   }
+
+   &__link :hover {
+      color: #888;
+      // color: $colorPurprle;
+
+   }
+
+   &__link--github {
+      transform: scale(1.7);
+
+   }
+
+   &__link a {
+      text-decoration: underline;
+      text-transform: none;
+      color: $colorPrimary;
+      font-size: 1.1rem;
+      font-family: 'Ibarra Real Nova', serif;
+
+   }
+
+}

@@ -190,7 +190,7 @@ body {
       max-width: 95vw;
       padding-bottom: .5rem;
       width: auto;
-      box-shadow: 0px 2px 7px -4px   black;
+      box-shadow: 0px 2px 7px -4px black;
       padding: 0;
       padding-bottom: 1rem;
       flex-direction: column; } }
@@ -221,7 +221,7 @@ body {
   @media (max-width: 56.25em) {
     .project__img {
       width: 30rem;
-      box-shadow: 0px 1px 5px   black; } }
+      box-shadow: 0px 1px 5px black; } }
   @media (max-width: 37.5em) {
     .project__img {
       width: inherit;
@@ -231,15 +231,17 @@ body {
   color: #000;
   padding: 0 1.5rem;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  position: relative;
+  /*this is for links show at the bottom of the container, but only in desktop, so in mobile and ipad is not a lot of empty space*/ }
   .project__content p {
     font-size: 1.1rem; }
   @media (max-width: 56.25em) {
     .project__content {
-      padding: 0; } }
-  @media (max-width: 56.25em) {
-    .project__content {
       padding: 0 1rem; } }
+  @media screen and (min-width: 900px) {
+    .project__content {
+      height: 280px; } }
 
 .project__tittle h3 {
   font-size: 2rem;
@@ -278,7 +280,13 @@ body {
   display: flex;
   gap: 1rem;
   font-weight: 1000;
-  padding: 1rem 0; }
+  padding: 1rem 0;
+  /*this is for links show at the bottom of the container, but only in desktop, so in mobile and ipad is not a lot of empty space*/ }
+  @media screen and (min-width: 900px) {
+    .project__link {
+      position: absolute;
+      bottom: 0;
+      left: 1.5rem; } }
 
 .project__link :hover {
   color: #888; }
