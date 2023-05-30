@@ -61,7 +61,7 @@
 .background{
    /* the translate put the image far away from the screen (together with the perspective from wrapper, and with scale we put the normal size) */
    transform: translateZ(-10px) scale(2);
-   filter: brightness(1.2);
+   filter: brightness(.9);
 }
 .backgroundMiddle{
    transform: translateZ(-7px) scale(1.7);
@@ -73,7 +73,7 @@
 }
 .foreground{
    transform: translateZ(-1px) scale(1.1);
-   filter: brightness(.75);
+   filter: brightness(.8);
 
    
 }
