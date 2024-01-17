@@ -323,10 +323,10 @@ body {
     transition: .2s all ease; }
   .tecnology--item img {
     object-fit: cover;
-    filter: brightness(0), invert(1); }
+    filter: brightness(0), invert(1);
+    max-height: 100px; }
     @media (max-width: 56.25em) {
       .tecnology--item img {
-        max-height: 138px;
         object-fit: contain; } }
   .tecnology--item i {
     font-size: 6rem; }

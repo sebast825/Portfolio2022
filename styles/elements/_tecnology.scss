@@ -26,8 +26,10 @@
    img{
       object-fit: cover;
        filter: brightness(0),invert(1);
+       max-height: 100px;
+
        @include respond(ipad){
-         max-height: 138px;
+     
          object-fit: contain;
       }
        
