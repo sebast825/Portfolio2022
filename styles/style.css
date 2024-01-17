@@ -254,6 +254,11 @@ body {
   .project__tittle h3 {
     margin-top: 1.5rem; } }
 
+@media screen and (min-width: 900px) {
+  .project__description {
+    max-height: 10rem;
+    overflow-y: auto; } }
+
 .project__description p {
   margin: .5rem 0;
   font-size: 1.2rem; }
@@ -262,10 +267,12 @@ body {
   display: flex;
   /* width: 100vw; */
   justify-content: center;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin-top: .7rem; }
 
 .project__tecnology span {
   padding: .2rem;
+  margin-bottom: 1rem;
   color: #000;
   transform: scale(0.9);
   transition: all .1s ease;

@@ -180,9 +180,20 @@ $bgProject: #fff;
       }
    }
 
-   &__description p {
-      margin: .5rem 0;
-      font-size: 1.2rem;
+   &__description {
+
+      @media screen and (min-width: 900px) {
+         max-height: 10rem;
+         overflow-y: auto;
+       
+      }
+      
+
+      p {
+         margin: .5rem 0;
+         font-size: 1.2rem;
+
+      }
    }
 
    &__tecnology {
@@ -190,11 +201,13 @@ $bgProject: #fff;
       /* width: 100vw; */
       justify-content: center;
       flex-wrap: wrap;
+      margin-top: .7rem;
       // font-size: .5rem;
    }
 
    &__tecnology span {
       padding: .2rem;
+      margin-bottom: 1rem;
       color: $colorPrimary;
       transform: scale(.9);
       transition: all .1s ease;
