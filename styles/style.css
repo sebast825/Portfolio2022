@@ -50,7 +50,8 @@ body {
     margin-bottom: 2rem; }
     @media (max-width: 37.5em) {
       .open__content--subTittle {
-        font-size: 1rem; } }
+        font-size: 1rem;
+        margin-top: 1rem; } }
 
 .background,
 .foreground,
@@ -260,7 +261,6 @@ body {
     overflow-y: auto; } }
 
 .project__description p {
-  margin: .5rem 0;
   font-size: 1.2rem; }
 
 .project__tecnology {
@@ -271,8 +271,7 @@ body {
   margin-top: .7rem; }
 
 .project__tecnology span {
-  padding: .2rem;
-  margin-bottom: 1rem;
+  padding: 0 .2rem;
   color: #000;
   transform: scale(0.9);
   transition: all .1s ease;
@@ -452,7 +451,7 @@ body {
     font-size: 1.5rem; }
   @media (max-width: 37.5em) {
     .section__open h1 {
-      font-size: 3rem; } }
+      font-size: 4rem; } }
 
 .section__text {
   width: 100%;
@@ -462,7 +461,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 10rem 20rem;
+  padding: 10rem 10rem;
   gap: 1rem;
   background-size: cover;
   background-attachment: fixed;
@@ -482,13 +481,13 @@ body {
       gap: 1rem; }
       .section__text h2 {
         line-height: 3rem;
-        font-size: 1.5rem; } }
+        font-size: 2rem; } }
   .section__text p {
     font-size: 1.5rem;
     margin: 1rem 0; }
     @media (max-width: 37.5em) {
       .section__text p {
-        font-size: 1rem; } }
+        font-size: 1.2rem; } }
 
 .section__project {
   background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/img/imgBg/hojas4.jpg");

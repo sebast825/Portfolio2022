@@ -18,7 +18,7 @@
    @include respond (phone){
       
     h1{
-      font-size: 3rem;
+      font-size: 4rem;
     }
    }
 }
@@ -31,7 +31,7 @@
    align-items: center;  
    justify-content: center;
    text-align: center;
-   padding: 10rem 20rem ;
+   padding: 10rem 10rem ;
    gap: 1rem;
    // background-image: url('/img/imgBg/hojas.jpg');  
    // filter: brightness(.2);
@@ -54,7 +54,7 @@ h2{
       gap: 1rem;
     h2{
       line-height: 3rem;
-      font-size: 1.5rem;
+      font-size: 2rem;
     }
    }
   p{
@@ -62,7 +62,7 @@ h2{
    font-size: 1.5rem;
    margin: 1rem 0;
    @include respond(phone){
-      font-size: 1rem;
+      font-size: 1.2rem;
    }
   }
 }
