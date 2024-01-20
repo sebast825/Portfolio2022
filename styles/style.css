@@ -461,7 +461,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 10rem 10rem;
+  padding: 10rem 15rem;
   gap: 1rem;
   background-size: cover;
   background-attachment: fixed;
@@ -484,7 +484,8 @@ body {
         font-size: 2rem; } }
   .section__text p {
     font-size: 1.5rem;
-    margin: 1rem 0; }
+    margin: 1rem 0;
+    letter-spacing: 2px; }
     @media (max-width: 37.5em) {
       .section__text p {
         font-size: 1.2rem; } }
