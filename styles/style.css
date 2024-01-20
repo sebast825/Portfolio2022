@@ -242,7 +242,7 @@ body {
       padding: 0 1rem; } }
   @media screen and (min-width: 900px) {
     .project__content {
-      height: 280px; } }
+      height: 300px; } }
 
 .project__tittle h3 {
   font-size: 2rem;
@@ -268,7 +268,10 @@ body {
   /* width: 100vw; */
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: .7rem; }
+  margin-top: .7rem;
+  padding-top: .7rem;
+  border-top: 1px solid;
+  border-color: rgba(240, 255, 244, 0.2); }
 
 .project__tecnology span {
   padding: 0 .2rem;
@@ -292,7 +295,7 @@ body {
     .project__link {
       position: absolute;
       bottom: 0;
-      left: 1.5rem; } }
+      left: 2rem; } }
 
 .project__link :hover {
   color: #00992D; }
@@ -473,7 +476,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 10rem 15rem;
+  padding: 7rem 15rem;
   gap: 1rem;
   background-size: cover;
   background-attachment: fixed;

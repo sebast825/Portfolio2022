@@ -163,7 +163,7 @@ $colorCard: #F0FFF4;
 
       /*this is for links show at the bottom of the container, but only in desktop, so in mobile and ipad is not a lot of empty space*/
       @media screen and (min-width: 900px) {
-         height: 280px;
+         height: 300px;
 
       }
    }
@@ -204,7 +204,11 @@ $colorCard: #F0FFF4;
       justify-content: center;
       flex-wrap: wrap;
       margin-top: .7rem;
+      padding-top: .7rem;
       // font-size: .5rem;
+      border-top: 1px solid;
+
+      border-color: rgba($color: $colorTittle, $alpha: .2);
    }
 
    &__tecnology span {
@@ -230,12 +234,13 @@ $colorCard: #F0FFF4;
       gap: 1rem;
       font-weight: 1000;
       padding: 1rem 0;
+      
       /*this is for links show at the bottom of the container, but only in desktop, so in mobile and ipad is not a lot of empty space*/
 color: #fff;
       @media screen and (min-width: 900px) {
          position: absolute;
          bottom: 0;
-         left: 1.5rem;
+         left: 2rem;
       }
 
 
