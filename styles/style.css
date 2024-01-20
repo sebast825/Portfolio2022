@@ -38,7 +38,7 @@ body {
   text-shadow: 0 0 15px black; }
   .open__content--tittle {
     font-size: 5rem;
-    color: #fff;
+    color: #F0FFF4;
     font-weight: 500; }
     @media (max-width: 37.5em) {
       .open__content--tittle {
@@ -46,7 +46,7 @@ body {
         line-height: 5rem; } }
   .open__content--subTittle {
     font-size: 1.5rem;
-    color: #fff;
+    color: #F0FFF4;
     margin-bottom: 2rem; }
     @media (max-width: 37.5em) {
       .open__content--subTittle {
@@ -133,7 +133,7 @@ body {
   text-align: center;
   padding-bottom: 4rem;
   font-size: 4rem;
-  color: white;
+  color: #F0FFF4;
   text-shadow: 0 0px 1px #000;
   font-family: 'Ibarra Real Nova', serif;
   font-weight: 1000; }
@@ -165,7 +165,7 @@ body {
 .container__project {
   /* border: 2px solid red; */
   display: flex;
-  box-shadow: 0px 0px 8px #222;
+  box-shadow: 0px 0px 8px #031809;
   width: 900px;
   max-width: 400px;
   flex-direction: column;
@@ -176,7 +176,7 @@ body {
   overflow: hidden;
   gap: 1.5rem;
   margin-bottom: 5rem;
-  background-color: white; }
+  background-color: rgba(3, 24, 9, 0.75); }
   @media (max-width: 56.25em) {
     .container__project {
       margin: 0;
@@ -229,7 +229,7 @@ body {
       margin: 0; } }
 
 .project__content {
-  color: #000;
+  color: #F0FFF4;
   padding: 0 1.5rem;
   display: flex;
   flex-direction: column;
@@ -247,7 +247,7 @@ body {
 .project__tittle h3 {
   font-size: 2rem;
   margin-bottom: .3rem;
-  color: #000;
+  color: #F0FFF4;
   font-family: 'Ibarra Real Nova', serif;
   font-weight: 1000; }
 
@@ -272,10 +272,9 @@ body {
 
 .project__tecnology span {
   padding: 0 .2rem;
-  color: #000;
+  color: #F0FFF4;
   transform: scale(0.9);
   transition: all .1s ease;
-  color: #000;
   font-family: 'Ibarra Real Nova', serif;
   font-weight: 1000; }
   .project__tecnology span:hover {
@@ -287,7 +286,8 @@ body {
   gap: 1rem;
   font-weight: 1000;
   padding: 1rem 0;
-  /*this is for links show at the bottom of the container, but only in desktop, so in mobile and ipad is not a lot of empty space*/ }
+  /*this is for links show at the bottom of the container, but only in desktop, so in mobile and ipad is not a lot of empty space*/
+  color: #fff; }
   @media screen and (min-width: 900px) {
     .project__link {
       position: absolute;
@@ -295,7 +295,7 @@ body {
       left: 1.5rem; } }
 
 .project__link :hover {
-  color: #888; }
+  color: #00992D; }
 
 .project__link--github {
   transform: scale(1.7); }
@@ -303,7 +303,7 @@ body {
 .project__link a {
   text-decoration: underline;
   text-transform: none;
-  color: #000;
+  color: #F0FFF4;
   font-size: 1.1rem;
   font-family: 'Ibarra Real Nova', serif; }
 
@@ -322,8 +322,20 @@ body {
   .tecnology--item a {
     text-decoration: none;
     text-transform: none;
-    color: black;
+    color: #000;
     cursor: pointer; }
+  .tecnology--item a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #031809;
+    opacity: .1;
+    transition: opacity .2s ease; }
+  .tecnology--item a:hover::after {
+    opacity: 0; }
   .tecnology--item img, .tecnology--item i {
     filter: invert(1);
     transition: .2s all ease; }
@@ -341,7 +353,7 @@ body {
     top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: #F0FFF4;
     opacity: 0;
     transition: .5s all ease;
     font-size: 1.3rem; }
@@ -465,13 +477,13 @@ body {
   gap: 1rem;
   background-size: cover;
   background-attachment: fixed;
-  background-color: #000;
-  color: #fff;
+  background-color: #031809;
+  color: #F0FFF4;
   font-size: 1.5rem; }
   .section__text h2 {
     font-family: 'Ibarra Real Nova', serif;
     font-weight: 1000;
-    font-size: 3rem; }
+    font-size: 4rem; }
   @media (max-width: 56.25em) {
     .section__text {
       padding: 7rem 4rem; } }
@@ -508,7 +520,7 @@ body {
       padding-bottom: 7rem; } }
 
 .section__teconology {
-  background-color: #000;
+  background-color: #031809;
   padding: 5rem 0;
   justify-content: center; }
   .section__teconology--tittle {
@@ -519,8 +531,7 @@ body {
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
-    gap: 2rem;
-    background-color: #000; }
+    gap: 2rem; }
     @media (min-width: 112.5em) {
       .section__teconology--content {
         padding: 0rem 40rem; } }
@@ -532,7 +543,7 @@ body {
         padding: 0rem 0rem; } }
 
 footer {
-  background-color: #000;
+  background-color: #031809;
   border-top: 1px solid white;
   padding: 3rem; }
 

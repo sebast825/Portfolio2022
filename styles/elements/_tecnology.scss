@@ -8,6 +8,7 @@
    justify-content: center;
    align-content: center;
    text-align: center;
+
    @include respond (ipad){
       flex-direction: column;
 
@@ -15,12 +16,33 @@
    a{
       text-decoration: none;
       text-transform: none;
-      color: black;
+      color: #000;
       cursor: pointer;
+
    }
+   a::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      //background-color: rgba(255, 0, 0, 0.5); /* Color de superposición (rojo semitransparente en este ejemplo) */
+      background-color: #031809;
+      opacity: .1;
+      transition: opacity .2s ease;
+   }
+   a:hover{
+      &::after{
+         opacity: 0;
+      }
+   }
+
    img,i{
       filter: invert(1);
       transition: .2s all ease;
+     
+
 
    }
    img{
@@ -43,7 +65,7 @@
       top: 75%;
       left: 50%;
       transform: translate(-50%,-50%);
-      color: white;
+      color: $colorTittle;
       // z-index: 10;
       opacity: 0;
       transition: .5s all ease;

@@ -1,47 +1,51 @@
+.open {
 
-
-.open{
-
-   &__title{
+   &__title {
       text-transform: uppercase;
       font-size: $section-tittle;
-     
+
    }
-   &__subtitle{
+
+   &__subtitle {
       font-size: $section-subtittle;
    }
-   &__content{
+
+   &__content {
       display: flex;
       flex-direction: column;
-         text-align: center;
-         // gap: 1rem;
-         width: 100vw;
-         height: 100vh;
-         justify-content: center;
-         text-shadow: 0 0 15px black;
+      text-align: center;
+      // gap: 1rem;
+      width: 100vw;
+      height: 100vh;
+      justify-content: center;
+      text-shadow: 0 0 15px black;
 
-         @include respond (phone){
-            // justify-content: flex-start;
-            // margin-top: 10rem;
-       
+      @include respond (phone) {
+         // justify-content: flex-start;
+         // margin-top: 10rem;
 
-         }
-      &--tittle{
+
+      }
+
+      &--tittle {
          font-size: 5rem;
-         color: $colorSecondary;
+         color: $colorTittle;
          font-weight: 500;
+
          // margin-bottom: -1rem;
-         @include respond (phone){
-            font-size:$section-tittle--phone;
+         @include respond (phone) {
+            font-size: $section-tittle--phone;
             line-height: 5rem;
          }
       }
-      &--subTittle{
+
+      &--subTittle {
          font-size: 1.5rem;
-         color: $colorSecondary;
+         color: $colorTittle;
          margin-bottom: 2rem;
-         @include respond (phone){
-            font-size:1rem;
+
+         @include respond (phone) {
+            font-size: 1rem;
             margin-top: 1rem;
          }
       }
@@ -52,7 +56,7 @@
 .background,
 .foreground,
 .backgroundMiddle,
-.section__text--foto{
+.section__text--foto {
    position: absolute;
    width: 100%;
    height: 100%;
@@ -60,12 +64,13 @@
    z-index: -1;
 }
 
-.background{
+.background {
    /* the translate put the image far away from the screen (together with the perspective from wrapper, and with scale we put the normal size) */
    transform: translateZ(-10px) scale(2);
    filter: brightness(.9);
 }
-.backgroundMiddle{
+
+.backgroundMiddle {
    transform: translateZ(-7px) scale(1.7);
    /* background-position: -50px; */
    /* background-attachment: 0 -50; */
@@ -73,85 +78,94 @@
 
 
 }
-.foreground{
+
+.foreground {
    transform: translateZ(-1px) scale(1.1);
    filter: brightness(.8);
 
-   
+
 }
-.tittle{
+
+.tittle {
    font-size: 7rem;
    color: #fff;
    text-shadow: 0 0 5px black;
 }
-.asd{
+
+.asd {
    font-size: 2rem;
- 
+
    color: #fff;
 }
 
 
-.capaFondo{
+.capaFondo {
    width: 100%;
    height: 100%;
    position: absolute;
 
-   &Uno{
-      background-image: linear-gradient(to top, #020 , #1A1E0D 5%,transparent 40%);
+   &Uno {
+      background-image: linear-gradient(to top, #020, #1A1E0D 5%, transparent 40%);
       opacity: 85%;
-      filter: brightness(.2) ;
-   
+      filter: brightness(.2);
+
    }
-   &Dos{
-   
-   
+
+   &Dos {
+
+
       // height: 150vh;
-      background-image: linear-gradient(to bottom,  rgb(00,10,00) 10%,transparent 40%);
-   
+      background-image: linear-gradient(to bottom, rgb(00, 10, 00) 10%, transparent 40%);
+
       opacity: 95%;
       background-size: cover;
       // background-attachment: fixed;
-     
-     
-   
+
+
+
    }
 
 }
-.section__text--foto{
+
+.section__text--foto {
    // filter: brightness(.2);
-   object-fit:cover;
-   
+   object-fit: cover;
+
 }
-.imgFondo{
-    background-image: url('/img/imgBg/hojas.jpg');  
+
+.imgFondo {
+   background-image: url('/img/imgBg/hojas.jpg');
    // filter: brightness(.2);
    background-size: cover;
    background-attachment: fixed;
 
 
 }
-.div{
+
+.div {
    filter: blur(0);
-height: 1rem;
-width: 100%;
-background-color: #1A1E0D;
+   height: 1rem;
+   width: 100%;
+   background-color: #1A1E0D;
 }
 
-.container__icons{
+.container__icons {
    display: flex;
    justify-content: center;
    gap: 2rem;
-   i{
+
+   i {
       font-size: 3rem;
       color: $colorTertiary;
-      text-shadow: 0 0 5px black; 
-      transition: all .2s ease ;
+      text-shadow: 0 0 5px black;
+      transition: all .2s ease;
       position: relative;
-
     
-      &:hover{
+
+      &:hover {
          color: $colorSecondary;
          top: -1px;
       }
    }
+ 
 }

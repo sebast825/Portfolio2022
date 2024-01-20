@@ -38,12 +38,12 @@
    background-size: cover;
    background-attachment: fixed;
 
-   background-color: #000;
-   color: #fff;
+   background-color: $colorBgDark;
+   color: $colorTittle;
 // filter: blur(3px);
 h2{
    @include fontUno;
-   font-size: 3rem;
+   font-size:  $section-tittle;
 }
    font-size: $fontMedium;  
    @include respond (ipad){
@@ -54,7 +54,7 @@ h2{
       gap: 1rem;
     h2{
       line-height: 3rem;
-      font-size: 2rem;
+      font-size: $section-tittle--phone;
     }
    }
   p{
@@ -97,7 +97,7 @@ h2{
 }
 
 .section__teconology{
-   background-color: #000;
+   background-color: $colorBgDark;
       padding: 5rem 0;
    // display: flex;
    // flex-direction: column;
@@ -115,7 +115,6 @@ h2{
       flex-wrap: wrap;
     gap: 2rem;
 
-   background-color: #000;
 
    @include respond (bigDesktop){
       padding: 0rem 40rem;
@@ -132,7 +131,7 @@ h2{
 }
 
 footer{
-  background-color: #000;
+  background-color: $colorBgDark;
   border-top: 1px solid white;
   padding: 3rem;
 

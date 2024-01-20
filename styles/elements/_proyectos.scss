@@ -1,9 +1,12 @@
+$colorProject : rgba($colorBgDark, .75);
+$colorCard: #F0FFF4;
+
 .container__tittle {
    width: 100vw;
    text-align: center;
    padding-bottom: 4rem;
    font-size: $section-tittle;
-   color: white;
+   color: $colorTittle;
    text-shadow: 0 0px 1px #000;
    @include fontUno;
 
@@ -41,19 +44,18 @@
    }
 }
 
-$colorProject : rgba(#fff, 1);
 
 @mixin terra {
    background-image: url('/img/imgBg/tierra.jpg');
 
 }
 
-$bgProject: #fff;
+
 
 .container__project {
    /* border: 2px solid red; */
    display: flex;
-   box-shadow: 0px 0px 8px #222;
+   box-shadow: 0px 0px 8px $colorBgDark;
    width: 900px;
    max-width: 400px;
    flex-direction: column;
@@ -144,7 +146,7 @@ $bgProject: #fff;
 .project {
    &__content {
       // background-color: $colorProject;
-      color: $colorPrimary;
+      color: $colorCard;
       padding: 0 1.5rem;
       display: flex;
       flex-direction: column;
@@ -169,7 +171,7 @@ $bgProject: #fff;
    &__tittle h3 {
       font-size: 2rem;
       margin-bottom: .3rem;
-      color: $colorPurprle;
+      color: $colorCard;
       // color: #000;
       @include fontUno;
    }
@@ -208,11 +210,11 @@ $bgProject: #fff;
    &__tecnology span {
       padding: 0 .2rem;
       //margin-bottom: 1rem;
-      color: $colorPrimary;
+      color: $colorCard;
       transform: scale(.9);
       transition: all .1s ease;
-      color: $colorPurprle;
-      // color: #000;
+
+ 
 
       @include fontUno;
 
@@ -229,7 +231,7 @@ $bgProject: #fff;
       font-weight: 1000;
       padding: 1rem 0;
       /*this is for links show at the bottom of the container, but only in desktop, so in mobile and ipad is not a lot of empty space*/
-
+color: #fff;
       @media screen and (min-width: 900px) {
          position: absolute;
          bottom: 0;
@@ -240,7 +242,7 @@ $bgProject: #fff;
    }
 
    &__link :hover {
-      color: #888;
+      color: #00992D;
       // color: $colorPurprle;
 
    }
@@ -253,7 +255,7 @@ $bgProject: #fff;
    &__link a {
       text-decoration: underline;
       text-transform: none;
-      color: $colorPrimary;
+      color: $colorCard;
       font-size: 1.1rem;
       font-family: 'Ibarra Real Nova', serif;
 
