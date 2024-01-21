@@ -183,7 +183,9 @@ $colorCard: #F0FFF4;
    }
 
    &__description {
-
+      display: flex;
+      flex-direction: column;
+      gap: .5rem;
       @media screen and (min-width: 900px) {
          max-height: 10rem;
          overflow-y: auto;
@@ -192,7 +194,6 @@ $colorCard: #F0FFF4;
       
 
       p {
-    
          font-size: 1.2rem;
 
       }

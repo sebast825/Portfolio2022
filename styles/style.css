@@ -255,13 +255,16 @@ body {
   .project__tittle h3 {
     margin-top: 1.5rem; } }
 
-@media screen and (min-width: 900px) {
-  .project__description {
-    max-height: 10rem;
-    overflow-y: auto; } }
-
-.project__description p {
-  font-size: 1.2rem; }
+.project__description {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem; }
+  @media screen and (min-width: 900px) {
+    .project__description {
+      max-height: 10rem;
+      overflow-y: auto; } }
+  .project__description p {
+    font-size: 1.2rem; }
 
 .project__tecnology {
   display: flex;
