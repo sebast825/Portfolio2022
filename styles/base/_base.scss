@@ -6,12 +6,16 @@
       width: 10px;
       background-color: #0B100C;
       border-radius: 5px;
+      @include respond(ipad) {
+         width: 4px;
 
+      }
    }
    &::-webkit-scrollbar-thumb{
 
          background-color: $colorHighlight;
          border-radius: 10px;
+         
    
    }
 }
