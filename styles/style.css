@@ -5,6 +5,13 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: inherit; }
+  *::-webkit-scrollbar {
+    width: 10px;
+    background-color: #0B100C;
+    border-radius: 5px; }
+  *::-webkit-scrollbar-thumb {
+    background-color: #ff9d00;
+    border-radius: 10px; }
 
 body {
   box-sizing: border-box;
@@ -127,6 +134,8 @@ body {
     .container__icons i:hover {
       color: #fff;
       top: -1px; }
+  .container__icons .colors:hover {
+    color: #ff9d00; }
 
 .container__tittle {
   width: 100vw;
@@ -259,6 +268,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: .5rem; }
+  .project__description::-webkit-scrollbar {
+    width: 3px; }
   @media screen and (min-width: 900px) {
     .project__description {
       max-height: 10rem;
@@ -301,7 +312,7 @@ body {
       left: 2rem; } }
 
 .project__link :hover {
-  color: #00992D; }
+  color: #ff9d00; }
 
 .project__link--github {
   transform: scale(1.7); }
@@ -360,6 +371,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     color: #F0FFF4;
+    color: #ff9d00;
     opacity: 0;
     transition: .5s all ease;
     font-size: 1.3rem; }

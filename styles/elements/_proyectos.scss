@@ -151,7 +151,7 @@ $colorCard: #F0FFF4;
       display: flex;
       flex-direction: column;
       position: relative;
-
+     
       p {
          font-size: 1.1rem;
 
@@ -186,6 +186,8 @@ $colorCard: #F0FFF4;
       display: flex;
       flex-direction: column;
       gap: .5rem;
+      &::-webkit-scrollbar{
+         width: 3px;}
       @media screen and (min-width: 900px) {
          max-height: 10rem;
          overflow-y: auto;
@@ -248,7 +250,8 @@ color: #fff;
    }
 
    &__link :hover {
-      color: #00992D;
+      //00992D | ff9d00
+      color: #ff9d00;
       // color: $colorPurprle;
 
    }

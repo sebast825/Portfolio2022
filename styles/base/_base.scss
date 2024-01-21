@@ -2,7 +2,18 @@
    margin: 0;
    padding: 0;
    box-sizing: inherit;
- 
+   &::-webkit-scrollbar{
+      width: 10px;
+      background-color: #0B100C;
+      border-radius: 5px;
+
+   }
+   &::-webkit-scrollbar-thumb{
+
+         background-color: $colorHighlight;
+         border-radius: 10px;
+   
+   }
 }
 body{
    box-sizing: border-box;   
@@ -11,7 +22,7 @@ body{
    height: 100%;
    //to remove side bar in wrapper
    // overflow-y: hidden;
-  
+ 
    font-family: 'Darker Grotesque', sans-serif;
 
 
