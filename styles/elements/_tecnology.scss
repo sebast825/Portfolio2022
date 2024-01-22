@@ -28,7 +28,7 @@
       width: 100%;
       height: 100%;
       //background-color: rgba(255, 0, 0, 0.5); /* Color de superposición (rojo semitransparente en este ejemplo) */
-      background-color: #031809;
+      background-color: $colorBgDark;
       opacity: .1;
       transition: opacity .2s ease;
    }
