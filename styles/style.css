@@ -229,8 +229,8 @@ body {
     box-shadow: 0 0 5px black;
     /* filter: brightness(.8);  */ }
   .project__img:hover img {
-    transform: scale(1.1);
-    filter: brightness(80%); }
+    transform: scale(1.1) rotate(2deg);
+    filter: brightness(90%); }
   @media (max-width: 56.25em) {
     .project__img {
       width: 30rem;
