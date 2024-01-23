@@ -75,8 +75,7 @@ body {
 
 .background {
   /* the translate put the image far away from the screen (together with the perspective from wrapper, and with scale we put the normal size) */
-  transform: translateZ(-10px) scale(2);
-  filter: brightness(0.9); }
+  transform: translateZ(-10px) scale(2); }
 
 .backgroundMiddle {
   transform: translateZ(-7px) scale(1.7);
@@ -86,7 +85,7 @@ body {
 
 .foreground {
   transform: translateZ(-1px) scale(1.1);
-  filter: brightness(0.8); }
+  filter: brightness(0.4); }
 
 .tittle {
   font-size: 7rem;
