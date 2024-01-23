@@ -45,7 +45,7 @@ body {
   width: 100vw;
   height: 100vh;
   justify-content: center;
-  text-shadow: 0 0 15px black; }
+  text-shadow: 5px 0px 10px black; }
   .open__content--tittle {
     font-size: 5rem;
     color: #F0FFF4;
@@ -89,8 +89,7 @@ body {
 
 .tittle {
   font-size: 7rem;
-  color: #fff;
-  text-shadow: 0 0 5px black; }
+  color: #fff; }
 
 .asd {
   font-size: 2rem;
