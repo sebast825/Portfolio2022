@@ -33,7 +33,7 @@
    text-align: center;
    padding: 7rem 15rem ;
    gap: 1rem;
-   // background-image: url('/img/imgBg/hojas.jpg');  
+   //background-image: url('/img/imgBg/hojas.jpg');  
    // filter: brightness(.2);
    background-size: cover;
    background-attachment: fixed;
@@ -66,6 +66,19 @@ h2{
       font-size: 1.2rem;
    }
   }
+}
+.bg_photo{
+   background-repeat: no-repeat;
+   background-position: right bottom; 
+   background-attachment: fixed;
+   background-image: url('/img/imgBg/almas.png');  
+   //background-color: red;
+   background-size: 20% auto;
+   @include respond(phone){
+      background-size: 40% auto;
+
+   }
+   
 }
 
 .section__project{
