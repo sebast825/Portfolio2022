@@ -13,6 +13,15 @@ $colorCard: #F0FFF4;
    @include respond(phone) {
       font-size: $section-tittle--phone;
    }
+   h2{
+      
+      @include respond (desktop) {
+         font-size: $section-tittle--medium;
+      }
+    
+    
+   }
+   
 }
 
 .proyectos {
