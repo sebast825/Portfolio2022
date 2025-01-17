@@ -176,6 +176,10 @@ $colorCard: #F0FFF4;
          height: 300px;
 
       }
+      a{
+         text-underline-offset: 5px;
+   
+        }
    }
 
    &__tittle h3 {
@@ -279,5 +283,6 @@ color: #fff;
       font-family: 'Ibarra Real Nova', serif;
 
    }
+  
 
 }

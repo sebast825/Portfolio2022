@@ -30,7 +30,7 @@
    }
 }
 
-.section__text {
+.section__text,.section__project--big{
    width: 100%;
    display: flex;
    flex-direction: column;
@@ -80,7 +80,7 @@
       
    }
 
-   p {
+   p,li {
       // font-family: 'Roboto', sans-serif;
       font-size: 1.5rem;
       margin: 1rem 0;
@@ -89,7 +89,14 @@
       @include respond(phone) {
          font-size: 1.2rem;
       }
+     
    }
+   li{
+      margin: auto;
+   }
+}
+.section__project--big{
+   text-align: left;
 }
 
 .bg_photo {
