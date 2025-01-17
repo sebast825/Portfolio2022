@@ -22,18 +22,21 @@ $image-max-width: 500px;
     @include respond(phone) {
       gap: 2rem;
     }
-    @media (min-width: 768px) {
+    @media (min-width: 1700px) {
       flex-direction: row;
       justify-content: space-around;
     }
   }
   .image-wrapper {
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex;
 
     height: min-content;
+    @media (max-width: 1700px) {
+      justify-content: center;
 
-    @include respond(phone) {
+    }
+    @include respond(ipad) {
       max-width: 100%;
       margin: auto;
     }
@@ -44,7 +47,7 @@ $image-max-width: 500px;
       border-radius: 8px;
       border-radius: 3px;
       box-shadow: 0px 0px 30px rgba($colorHighlight, 0.4);
-      @include respond(phone) {
+      @include respond(ipad) {
         min-width: 0;
         max-width: min-content;
         box-shadow: 0px 0px 15px rgba($colorHighlight, 0.4);
