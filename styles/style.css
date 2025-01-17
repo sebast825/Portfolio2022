@@ -484,11 +484,13 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 75vw;
   gap: 4rem; }
   @media (max-width: 37.5em) {
     .container-custom .row-custom {
       gap: 2rem; } }
+  @media (max-width: 75em) {
+    .container-custom .row-custom {
+      width: 75vw; } }
   @media (min-width: 1700px) {
     .container-custom .row-custom {
       flex-direction: row;

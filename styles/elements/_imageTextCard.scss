@@ -16,11 +16,13 @@ $image-max-width: 500px;
     flex-direction: column;
     justify-content: center;
     //align-items: center;
-    width: 75vw;
 
     gap: 4rem;
     @include respond(phone) {
       gap: 2rem;
+    }
+    @include respond(desktop) {
+      width: 75vw;
     }
     @media (min-width: 1700px) {
       flex-direction: row;
