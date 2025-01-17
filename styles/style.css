@@ -470,6 +470,94 @@ body {
   transition: all .2s ease-out;
   cursor: pointer; }
 
+.bg_custom {
+  background-color: #000 !important; }
+
+@media (max-width: 1100px) {
+  .container-custom {
+    max-width: max-content; } }
+
+.container-custom .row-custom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 75vw;
+  gap: 4rem; }
+  @media (min-width: 768px) {
+    .container-custom .row-custom {
+      flex-direction: row;
+      justify-content: space-around; } }
+
+.container-custom .image-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  height: min-content; }
+  @media (max-width: 750px) {
+    .container-custom .image-wrapper {
+      margin: auto; } }
+  .container-custom .image-wrapper img {
+    min-width: 600px;
+    max-width: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 30px rgba(255, 157, 0, 0.4); }
+  .container-custom .image-wrapper .content-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1.5rem; }
+    @media (min-width: 768px) {
+      .container-custom .image-wrapper .content-wrapper {
+        margin-top: 0; } }
+
+.container-custom.image-left .row-custom {
+  flex-direction: row-reverse; }
+
+.card-title {
+  font-size: 2.25rem;
+  font-family: 'Ibarra Real Nova', serif;
+  font-weight: 1000; }
+
+.card-text, .card-bullet {
+  font-size: 1.5rem !important; }
+
+.card-title,
+.card-text,
+.card-bullet {
+  text-align: left !important; }
+
+li::marker {
+  color: #ff9d00; }
+
+.custom__project__link {
+  padding: 0 1.5rem;
+  gap: 1rem;
+  font-weight: 1000;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  /*this is for links show at the bottom of the container, but only in desktop, so in mobile and ipad is not a lot of empty space*/
+  color: #fff !important; }
+  @media (max-width: 37.5em) {
+    .custom__project__link {
+      padding-bottom: 0; } }
+  .custom__project__link--github {
+    transform: scale(1.7); }
+  .custom__project__link a {
+    text-decoration: underline;
+    text-transform: none;
+    color: #F0FFF4;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    font-family: "Ibarra Real Nova", serif; }
+    .custom__project__link a:hover {
+      color: #ff9d00; }
+
+.custom__project__tecnology {
+  transform: scale(0.9); }
+
 .section__open {
   position: relative;
   display: flex;

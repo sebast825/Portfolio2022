@@ -1,0 +1,116 @@
+$max-width: 1100px;
+$image-max-width: 500px;
+
+.bg_custom {
+  background-color: #000 !important;
+}
+.container-custom {
+  //max-width: $max-width;
+  @media (max-width: 1100px) {
+    max-width: max-content;
+  }
+
+  .row-custom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75vw;
+
+    gap: 4rem;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+  .image-wrapper {
+    display: flex;
+    justify-content: flex-start;
+ 
+    height: min-content;
+    @media (max-width: 750px) {
+      margin: auto;
+    }
+
+    img {
+      min-width: 600px;
+      max-width: $image-max-width;
+      object-fit: cover;
+      border-radius: 8px;
+      border-radius: 3px;
+      box-shadow: 0px 0px 30px rgba($colorHighlight, 0.4);
+    }
+    .content-wrapper {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin-top: 1.5rem;
+
+      @media (min-width: 768px) {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &.image-left {
+    .row-custom {
+      flex-direction: row-reverse;
+    }
+  }
+}
+.card-title {
+  font-size: $section-subtittle *1.5;
+  @include fontUno;
+}
+.card-text,.card-bullet {
+  font-size: $section-subtittle !important;
+}
+.card-title,
+.card-text,
+.card-bullet {
+  text-align: left !important;
+}
+li::marker{
+  color: $colorHighlight;
+}
+.custom__project__link {
+  padding: 0 1.5rem;
+  gap: 1rem;
+  font-weight: 1000;
+  padding: 1rem 0;
+  @include respond (phone) {
+    // justify-content: flex-start;
+    // margin-top: 10rem;
+    padding-bottom: 0;
+    
+
+
+ }
+  display: flex;
+  justify-content: center;
+  /*this is for links show at the bottom of the container, but only in desktop, so in mobile and ipad is not a lot of empty space*/
+  color: #fff !important;
+  //margin-top: 2rem;
+  &--github {
+    transform: scale(1.7);
+  }
+
+  a {
+    text-decoration: underline;
+    text-transform: none;
+    color: $colorCard;
+    font-size: $section-subtittle;
+    letter-spacing: 1px;
+    font-family: "Ibarra Real Nova", serif;
+    &:hover {
+      //00992D | ff9d00
+      color: $colorHighlight;
+      // color: $colorPurprle;
+    }
+  }
+}
+
+.custom__project__tecnology{
+  transform: scale(.9);
+}
