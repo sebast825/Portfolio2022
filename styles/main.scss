@@ -1,6 +1,4 @@
-body{
-   background-color: #000;
-};
+
 
 
 @import "base/mixins";
@@ -14,5 +12,12 @@ body{
 @import "elements/tecnology";
 @import "elements/btnSwich";
 @import "elements/imageTextCard";
+@import "elements/projectPage";
+
 
 @import "layout/pages";
+
+body{
+   background-color: $colorBgDark;
+  
+  };

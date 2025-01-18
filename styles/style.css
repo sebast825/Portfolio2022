@@ -1,6 +1,3 @@
-body {
-  background-color: #000; }
-
 * {
   margin: 0;
   padding: 0;
@@ -596,6 +593,183 @@ li::marker {
     .project--big-subtitle {
       font-size: 1.3rem; } }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.5;
+  color: #000;
+  background-color: #0F2415; }
+
+h1, h2, h3 {
+  margin-bottom: 1rem; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem; }
+
+.button {
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease; }
+  .button--primary {
+    background-color: #0F2415;
+    color: #fff; }
+    .button--primary:hover {
+      background-color: black; }
+
+.header {
+  background-color: #1e90ff;
+  padding: 4rem 0;
+  text-align: center; }
+
+.nav {
+  padding: 1rem 0; }
+  .nav__logo {
+    font-size: 1.5rem;
+    color: #0F2415; }
+
+.hero {
+  padding: 4rem 0; }
+  .hero__content {
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto; }
+  .hero__title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #F0FFF4; }
+  .hero__subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    color: #F0FFF4; }
+
+.process {
+  padding: 4rem 0;
+  background-color: #FFFFFF; }
+  .process__steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem; }
+  .process .section__title {
+    color: #000; }
+
+.step {
+  text-align: center;
+  padding: 2rem;
+  background-color: #e6f3ff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
+  .step__number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    background-color: #1e90ff;
+    color: #FFFFFF;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    font-weight: bold; }
+  .step__title {
+    color: #000; }
+  .step__description {
+    color: #000; }
+
+.benefits {
+  padding: 4rem 0;
+  background-color: #1e90ff; }
+  .benefits__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem; }
+  .benefits .section__title {
+    color: #FFFFFF; }
+
+.benefit-card {
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
+  .benefit-card__title {
+    color: #000; }
+  .benefit-card__list {
+    list-style-position: inside;
+    margin-top: 1rem;
+    color: #000; }
+    .benefit-card__list li {
+      margin-bottom: 0.5rem; }
+
+.features {
+  padding: 4rem 0;
+  background-color: #FFFFFF; }
+  .features__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem; }
+  .features .section__title {
+    color: #000; }
+
+.feature {
+  text-align: center;
+  padding: 2rem;
+  background-color: #e6f3ff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
+  .feature__title {
+    color: #000; }
+  .feature__description {
+    color: #000; }
+
+.results {
+  padding: 4rem 0;
+  background-color: #1e90ff; }
+  .results__stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem; }
+  .results .section__title {
+    color: #F0FFF4; }
+
+.stat {
+  text-align: center; }
+  .stat__number {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #0F2415; }
+  .stat__description {
+    color: #F0FFF4; }
+
+.footer {
+  padding: 2rem 0;
+  background-color: #0b190f;
+  background-color: #0F2415;
+  color: #F0FFF4;
+  text-align: center; }
+
+.section__title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem; }
+
+@media (max-width: 768px) {
+  .hero__title {
+    font-size: 2rem; }
+  .process__steps,
+  .benefits__grid,
+  .features__grid,
+  .results__stats {
+    grid-template-columns: 1fr; } }
+
 .section__open {
   position: relative;
   display: flex;
@@ -730,9 +904,12 @@ footer {
   position: fixed;
   z-index: 1000; }
 
-header {
+.header-main-page {
   display: flex;
   flex-direction: column;
   position: absolute;
   align-items: flex-end;
   width: 100%; }
+
+body {
+  background-color: #0F2415; }

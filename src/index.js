@@ -4,6 +4,7 @@ window.addEventListener('load',()=>{
   preloader.style.display = 'none';
 })
 
+//document.querySelector('.wrapper').style.display = 'none';
 
 
 const checkboxLanguage = document.querySelector('.checkboxLanguage');
@@ -15,6 +16,6 @@ checkboxLanguage.addEventListener('click',()=>{
   if (checkboxValue){
     location.href = "spanish.html"
   }else{
-    location.href = "index.html"
+    location.href = "project.html"
   }
 })
