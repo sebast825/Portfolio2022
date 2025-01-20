@@ -803,6 +803,41 @@ h1, h2, h3 {
   .results__stats {
     grid-template-columns: 1fr; } }
 
+.lpWebsite__proyectos {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem; }
+
+.lpWebsite__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem; }
+  .lpWebsite__container:hover {
+    cursor: pointer; }
+  .lpWebsite__container:hover .lpWebsite__img {
+    box-shadow: 0px 0px 40px rgba(255, 157, 0, 0.6); }
+  .lpWebsite__container:hover .lpWebsite__link {
+    color: #ff9d00; }
+
+.lpWebsite__img {
+  width: 300px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0px 0px 30px rgba(255, 157, 0, 0.4);
+  transition: box-shadow 0.3s ease; }
+  @media (max-width: 56.25em) {
+    .lpWebsite__img {
+      box-shadow: 0px 0px 15px rgba(255, 157, 0, 0.4); } }
+
+.lpWebsite__link {
+  text-underline-offset: 5px;
+  text-decoration: underline; }
+
 .section__open {
   position: relative;
   display: flex;

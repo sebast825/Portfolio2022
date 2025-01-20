@@ -1,0 +1,47 @@
+.lpWebsite {
+   &__proyectos {
+     display: flex;
+     justify-content: center;
+     flex-direction: row;
+     flex-wrap: wrap;
+     gap: 2rem;
+   }
+ 
+   &__container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     gap: 0.5rem;
+ 
+     &:hover{
+      cursor: pointer;
+     }
+     &:hover .lpWebsite__img {
+       box-shadow: 0px 0px 40px rgba($colorHighlight, 0.6);
+     }
+     &:hover .lpWebsite__link {
+      color: $colorHighlight;
+     }
+   }
+ 
+   &__img {
+     width: 300px;
+     height: 250px;
+     object-fit: cover;
+     border-radius: 5px;
+     box-shadow: 0px 0px 30px rgba($colorHighlight, 0.4);
+     transition: box-shadow 0.3s ease;
+     @include respond(ipad) {
+       box-shadow: 0px 0px 15px rgba($colorHighlight, 0.4);
+     }
+   }
+ 
+   &__link {
+     text-underline-offset: 5px;
+     text-decoration: underline;
+ 
+   }
+ }
+ 
+ 
