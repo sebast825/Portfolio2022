@@ -6,7 +6,7 @@ $image-max-width: 500px;
   color: $colorTertiary !important;
 }
 
-.bg_custom--darken{
+.bg_custom--darken {
   background-color: darken($colorBgDark, 3.5%) !important;
   color: $colorTertiary !important;
 }
@@ -29,7 +29,6 @@ $image-max-width: 500px;
     @include respond(desktop) {
       width: 75vw;
       gap: 1rem;
-
     }
     @media (min-width: 1700px) {
       flex-direction: row;
@@ -37,23 +36,18 @@ $image-max-width: 500px;
     }
   }
 
-  .reOrder-firstChild{
-    
+  .reOrder-firstChild {
     order: 2;
     @media (max-width: 1700px) {
-      order: 1!important;
-
+      order: 1 !important;
     }
-
   }
-  .reOrder-secondChild{
+  .reOrder-secondChild {
     order: 1;
 
     @media (max-width: 1700px) {
-      order: 2!important;
-
+      order: 2 !important;
     }
-    
   }
   .image-wrapper {
     display: flex;
@@ -96,7 +90,6 @@ $image-max-width: 500px;
   &.image-left {
     .row-custom {
       flex-direction: row-reverse;
-      
     }
   }
 }
@@ -128,8 +121,8 @@ li::marker {
   gap: 2rem;
 
   padding: 1rem 0;
-  transform: scale(0.9);
-
+  transform: scale(1.2);
+  font-style: italic;
   @include respond(phone) {
     // justify-content: flex-start;
     // margin-top: 10rem;
@@ -152,6 +145,7 @@ li::marker {
     text-decoration: underline;
     text-transform: none;
     color: $colorCard;
+    
     //font-size: $section-subtittle;
     letter-spacing: 1px;
     @include respond(phone) {
@@ -190,7 +184,6 @@ li::marker {
   text-underline-offset: 5px;
   &:hover {
     color: $colorHighlight;
-
   }
 }
 .project--big-subtitle {

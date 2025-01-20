@@ -257,12 +257,12 @@ $colorCard: #F0FFF4;
       gap: 1rem;
       font-weight: 1000;
       padding: 1rem 0;
-      
+
       /*this is for links show at the bottom of the container, but only in desktop, so in mobile and ipad is not a lot of empty space*/
 color: #fff;
       @media screen and (min-width: 900px) {
          position: absolute;
-         bottom: 0;
+         bottom: -.5rem;
          left: 2rem;
       }
 

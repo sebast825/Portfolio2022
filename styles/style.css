@@ -318,7 +318,7 @@ body {
   @media screen and (min-width: 900px) {
     .project__link {
       position: absolute;
-      bottom: 0;
+      bottom: -.5rem;
       left: 2rem; } }
 
 .project__link :hover {
@@ -575,7 +575,8 @@ li::marker {
   padding: 0 1.5rem;
   gap: 2rem;
   padding: 1rem 0;
-  transform: scale(0.9);
+  transform: scale(1.2);
+  font-style: italic;
   display: flex;
   justify-content: center;
   /*this is for links show at the bottom of the container, but only in desktop, so in mobile and ipad is not a lot of empty space*/
