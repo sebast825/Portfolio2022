@@ -824,8 +824,8 @@ h1, h2, h3 {
     color: #ff9d00; }
 
 .lpWebsite__img {
-  width: 300px;
-  height: 250px;
+  width: 400px;
+  height: 350px;
   object-fit: cover;
   border-radius: 5px;
   box-shadow: 0px 0px 30px rgba(255, 157, 0, 0.4);
