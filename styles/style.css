@@ -28,6 +28,9 @@ body {
   perspective: 10px;
   width: 100vw; }
 
+.removeBullet {
+  list-style: none; }
+
 .open__title {
   text-transform: uppercase;
   font-size: 4rem; }
