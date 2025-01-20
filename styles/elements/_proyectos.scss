@@ -30,20 +30,27 @@ $colorCard: #F0FFF4;
    height: 100%;
    padding: 0 15%;
    display: grid;
-   grid-template-columns: repeat(2, .5fr);
+   grid-template-columns: repeat(3, 1fr);
    //  align-items: center;
    justify-items: center;
    justify-content: center;
+   align-items: center;
+   align-content: center;
    margin: auto;
+    gap: 2rem;
 
+   @media screen and (max-width: 1500px) {
+      grid-template-columns: repeat(2, 1fr);
 
+   }
    @include respond(desktop) {
-      gap: 2rem;
+      gap: 1rem;
+      grid-template-columns: 1fr;
+
 
    }
 
    @include respond (ipad) {
-      grid-template-columns: 1fr;
       gap: 3rem;
    }
 
@@ -52,7 +59,6 @@ $colorCard: #F0FFF4;
 
    }
 }
-
 
 @mixin terra {
    background-image: url('/img/imgBg/tierra.jpg');
@@ -66,7 +72,7 @@ $colorCard: #F0FFF4;
    display: flex;
    box-shadow: 0px 0px 8px $colorBgDark;
    width: 900px;
-   max-width: 400px;
+   max-width: 450px;
    flex-direction: column;
    border-radius: 3px;
    // margin: 3% 5%;

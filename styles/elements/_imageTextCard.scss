@@ -7,7 +7,7 @@ $image-max-width: 500px;
 }
 
 .bg_custom--darken{
-  background-color: darken($colorBgDark, 3%) !important;
+  background-color: darken($colorBgDark, 3.5%) !important;
   color: $colorTertiary !important;
 }
 .container-custom {
