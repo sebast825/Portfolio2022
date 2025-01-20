@@ -5,6 +5,11 @@ $image-max-width: 500px;
   background-color: $colorBgDark !important;
   color: $colorTertiary !important;
 }
+
+.bg_custom--darken{
+  background-color: darken($colorBgDark, 3%) !important;
+  color: $colorTertiary !important;
+}
 .container-custom {
   //max-width: $max-width;
   @media (max-width: 1100px) {
@@ -183,9 +188,9 @@ li::marker {
 
 .project__link--demo a {
   text-underline-offset: 5px;
-  color: $colorHighlight;
   &:hover {
-    color: $colorTittle;
+    color: $colorHighlight;
+
   }
 }
 .project--big-subtitle {
