@@ -1,12 +1,12 @@
 .container--language {
    position: fixed;
-   top: 30px; /* Ajusta según la distancia desde el borde superior */
-   right: 30px; /* Ajusta la distancia desde el borde derecho */
+   top: 30px; 
+   right: 30px; 
    display: flex;
    justify-content: center;
    align-items: center;
    gap: 1rem;
-   z-index: 9999; /* Asegúrate de que se muestre sobre otros elementos */
+ 
    padding: 1rem;
 }
 
