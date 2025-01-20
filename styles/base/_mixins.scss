@@ -17,9 +17,11 @@
    }
 
    @mixin bgGradient{
-      background: linear-gradient(175deg, lighten($colorBgDark, 3%) 60%,lighten($colorBgDark, 5%)100%, $colorBgDark 120%);
+      //background: linear-gradient(175deg, lighten($colorBgDark, 3%) 60%,lighten($colorBgDark, 5%)100%, $colorBgDark 120%);
       //background-color: red;
-      background-color: lighten($colorBgDark, 3%);
+      background-color: lighten($colorBgDark, 1%);
+  //    background-color: $colorBgDark;
+
 
    }
    @mixin bgGradient--invert{
