@@ -944,10 +944,11 @@ footer {
   width: 100%; }
 
 .gradient--one {
-  background: linear-gradient(175deg, #00310e 30%, #004b15 70%, #00310e 140%); }
+  background: linear-gradient(175deg, #004012 60%, #004b15 100%, #00310e 120%);
+  background-color: #004012; }
 
 .gradient--two {
-  background-color: #00270b; }
+  background-color: #001d08; }
 
 body {
   background-color: #00310e; }
