@@ -31,6 +31,25 @@ $image-max-width: 500px;
       justify-content: space-around;
     }
   }
+
+  .reOrder-firstChild{
+    
+    order: 2;
+    @media (max-width: 1700px) {
+      order: 1!important;
+
+    }
+
+  }
+  .reOrder-secondChild{
+    order: 1;
+
+    @media (max-width: 1700px) {
+      order: 2!important;
+
+    }
+    
+  }
   .image-wrapper {
     display: flex;
     justify-content: flex;
@@ -72,6 +91,7 @@ $image-max-width: 500px;
   &.image-left {
     .row-custom {
       flex-direction: row-reverse;
+      
     }
   }
 }

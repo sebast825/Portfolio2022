@@ -494,6 +494,18 @@ body {
       flex-direction: row;
       justify-content: space-around; } }
 
+.container-custom .reOrder-firstChild {
+  order: 2; }
+  @media (max-width: 1700px) {
+    .container-custom .reOrder-firstChild {
+      order: 1 !important; } }
+
+.container-custom .reOrder-secondChild {
+  order: 1; }
+  @media (max-width: 1700px) {
+    .container-custom .reOrder-secondChild {
+      order: 2 !important; } }
+
 .container-custom .image-wrapper {
   display: flex;
   justify-content: flex;
