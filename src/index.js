@@ -16,6 +16,6 @@ checkboxLanguage.addEventListener('click',()=>{
   if (checkboxValue){
     location.href = "spanish.html"
   }else{
-    location.href = "project.html"
+    location.href = "index.html"
   }
 })
