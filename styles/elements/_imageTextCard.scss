@@ -2,13 +2,15 @@ $max-width: 1100px;
 $image-max-width: 500px;
 
 .bg_custom {
-  background-color: $colorBgDark !important;
+  background-color: $colorBgDark ;
   color: $colorTertiary !important;
+ // @include bgGradient;
+
 }
 
 .bg_custom--darken {
-  background-color: darken($colorBgDark, 3.5%) !important;
   color: $colorTertiary !important;
+  // @include bgGradientInvert;
 }
 .container-custom {
   //max-width: $max-width;

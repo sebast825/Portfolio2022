@@ -15,3 +15,17 @@
       }
       
    }
+
+   @mixin bgGradient{
+      background: linear-gradient(175deg, $colorBgDark 30%,lighten($colorBgDark, 5%)70%, $colorBgDark 140%);
+      //background-color: red;
+      //background-color: lighten($colorBgDark, 5%);
+
+   }
+   @mixin bgGradient--invert{
+     //background: linear-gradient(170deg ,$colorBgDark 50%,lighten($colorBgDark, 5%) 100%)!important;
+      //background-color: red!important;
+      background-color: darken($colorBgDark, 2%);
+      //background-color: $colorBgDark;
+
+   }

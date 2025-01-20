@@ -45,9 +45,10 @@
    background-size: cover;
    background-attachment: fixed;
 
-   background-color: $colorBgDark;
+   //background-color: $colorBgDark;
    color: $colorTittle;
-   
+ 
+
    // filter: blur(3px);
    h2 {
       @include fontUno;
@@ -203,5 +204,14 @@ footer {
 
    align-items: flex-end;
    width: 100%;
+
+}
+
+
+.gradient--one{
+   @include bgGradient;
+}
+.gradient--two{
+   @include bgGradient--invert;
 
 }

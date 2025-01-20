@@ -479,11 +479,10 @@ body {
   cursor: pointer; }
 
 .bg_custom {
-  background-color: #00310e !important;
+  background-color: #00310e;
   color: #ddd !important; }
 
 .bg_custom--darken {
-  background-color: #001f09 !important;
   color: #ddd !important; }
 
 @media (max-width: 1100px) {
@@ -839,7 +838,6 @@ h1, h2, h3 {
   gap: 1rem;
   background-size: cover;
   background-attachment: fixed;
-  background-color: #00310e;
   color: #F0FFF4;
   font-size: 1.5rem; }
   .section__text h2, .section__project--big h2 {
@@ -944,6 +942,12 @@ footer {
   position: absolute;
   align-items: flex-end;
   width: 100%; }
+
+.gradient--one {
+  background: linear-gradient(175deg, #00310e 30%, #004b15 70%, #00310e 140%); }
+
+.gradient--two {
+  background-color: #00270b; }
 
 body {
   background-color: #00310e; }
