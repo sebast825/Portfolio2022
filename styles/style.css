@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -408,32 +409,38 @@ body {
       top: 0; } }
 
 .container--language {
+  position: fixed;
+  top: 30px;
+  /* Ajusta según la distancia desde el borde superior */
+  right: 30px;
+  /* Ajusta la distancia desde el borde derecho */
   display: flex;
   justify-content: center;
-  padding: 1rem;
   align-items: center;
-  gap: .2rem; }
-  .container--language::before, .container--language::after {
-    content: "";
-    width: 2.5rem;
-    height: 1.5rem;
-    display: block;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 3px; }
-  .container--language::before {
-    background-image: url("/img/icons/eeuu.png"); }
-  .container--language::after {
-    background-image: url("/img/icons/argentina2.png"); }
+  gap: 1rem;
+  z-index: 9999;
+  /* Asegúrate de que se muestre sobre otros elementos */
+  padding: 1rem; }
+
+.container--language::before,
+.container--language::after {
+  content: "";
+  width: 3.5rem;
+  height: 2.5rem;
+  display: block;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 3px; }
+
+.container--language::before {
+  background-image: url("/img/icons/eeuu.png"); }
+
+.container--language::after {
+  background-image: url("/img/icons/argentina2.png"); }
 
 .checkbox {
-  position: absolute;
-  display: none;
-  opacity: 0; }
-  .checkbox:checked ~ .btnSwich::before {
-    transform: translate(22px);
-    background-color: #08f; }
+  display: none; }
 
 .btnSwich {
   background-color: #444;
@@ -445,38 +452,26 @@ body {
   height: 26px;
   width: 50px;
   position: relative;
-  transition: all .2s ease-out;
+  transition: all 0.2s ease-out;
   cursor: pointer; }
-  .btnSwich::before {
-    content: "";
-    position: absolute;
-    background-color: #f00;
-    border-radius: 50%;
-    top: 2px;
-    left: 2px;
-    height: 22px;
-    width: 22px;
-    transition: all .2s ease-out;
-    cursor: pointer; }
 
-.btnSwich__option {
-  width: 50%;
-  height: 100%;
-  border-radius: 50%; }
-
-.checkboxTwo {
-  background-color: blue; }
-
-.btnSwich__ball {
+.btnSwich::before {
+  content: "";
   position: absolute;
-  background-color: red;
+  background-color: #f00;
   border-radius: 50%;
   top: 2px;
   left: 2px;
   height: 22px;
   width: 22px;
-  transition: all .2s ease-out;
+  transition: all 0.2s ease-out;
   cursor: pointer; }
+
+.checkbox:checked ~ .btnSwich::before {
+  transform: translateX(22px);
+  /* Desplaza el círculo al hacer hover */
+  background-color: #08f;
+  /* Cambia de color */ }
 
 .bg_custom {
   background-color: #00310e;
