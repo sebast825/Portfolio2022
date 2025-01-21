@@ -810,6 +810,9 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 2rem; }
+  @media (max-width: 56.25em) {
+    .lpWebsite__proyectos {
+      flex-direction: column; } }
 
 .lpWebsite__container {
   display: flex;
@@ -831,13 +834,19 @@ body {
   border-radius: 5px;
   box-shadow: 0px 0px 30px rgba(255, 157, 0, 0.4);
   transition: box-shadow 0.3s ease; }
-  @media (max-width: 56.25em) {
+  @media (max-width: 37.5em) {
     .lpWebsite__img {
-      box-shadow: 0px 0px 15px rgba(255, 157, 0, 0.4); } }
+      box-shadow: 0px 0px 15px rgba(255, 157, 0, 0.4);
+      max-width: 90vw;
+      height: auto; } }
 
 .lpWebsite__link {
   text-underline-offset: 5px;
-  text-decoration: underline; }
+  text-decoration: underline;
+  color: #F0FFF4; }
+  @media (max-width: 37.5em) {
+    .lpWebsite__link {
+      font-size: 1.17rem; } }
 
 .section__open {
   position: relative;

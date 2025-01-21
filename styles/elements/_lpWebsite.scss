@@ -5,6 +5,12 @@
      flex-direction: row;
      flex-wrap: wrap;
      gap: 2rem;
+
+     @include respond(ipad) {
+
+
+      flex-direction: column;}
+
    }
  
    &__container {
@@ -13,7 +19,7 @@
      align-items: center;
      flex-direction: column;
      gap: 0.5rem;
- 
+
      &:hover{
       cursor: pointer;
      }
@@ -32,14 +38,20 @@
      border-radius: 5px;
      box-shadow: 0px 0px 30px rgba($colorHighlight, 0.4);
      transition: box-shadow 0.3s ease;
-     @include respond(ipad) {
+     @include respond(phone) {
        box-shadow: 0px 0px 15px rgba($colorHighlight, 0.4);
+       max-width: 90vw;
+       height: auto;
      }
    }
  
    &__link {
      text-underline-offset: 5px;
      text-decoration: underline;
+     color: $colorSecondary;
+     @include respond(phone) {
+      font-size: $section-subtittle--phone * .9;
+    }
  
    }
  }
