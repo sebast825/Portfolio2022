@@ -23,6 +23,10 @@
    background-position: center;
    background-repeat: no-repeat;
    border-radius: 3px;
+   @include respond (ipad){
+      width: 2.5rem;
+      height: 1.5rem;
+   }
 }
 
 .container--language::before {
@@ -46,6 +50,7 @@
    border-radius: 50px;
    height: 26px;
    width: 50px;
+
    position: relative;
    transition: all 0.2s ease-out;
    cursor: pointer;

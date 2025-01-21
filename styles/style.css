@@ -443,6 +443,11 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 3px; }
+  @media (max-width: 56.25em) {
+    .container--language::before,
+    .container--language::after {
+      width: 2.5rem;
+      height: 1.5rem; } }
 
 .container--language::before {
   background-image: url("/img/icons/eeuu.png"); }
