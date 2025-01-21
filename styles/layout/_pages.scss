@@ -12,22 +12,9 @@
    z-index: -1;
    @include fontUno;
 
-   h4 {
-      font-size: 1.5rem;
 
-   }
 
-   h1 {
-      line-height: 1.2; 
-      @include respond (desktop) {
-
-         font-size: $section-tittle;
-      }
-      @include respond (phone) {
-
-         font-size: $section-tittle;
-      }
-   }
+ 
 }
 
 .section__text,.section__project--big{
