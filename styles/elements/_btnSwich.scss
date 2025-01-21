@@ -5,9 +5,12 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   gap: 1rem;
- 
+   gap: 1rem; 
    padding: 1rem;
+   @include respond (ipad){
+      top: 10px; 
+      right: 10px; 
+   }
 }
 
 .container--language::before, 

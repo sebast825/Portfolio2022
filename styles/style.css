@@ -51,10 +51,12 @@ body {
     font-size: 6rem;
     color: #F0FFF4;
     font-weight: 500;
-    line-height: 5rem; }
+    line-height: 5rem;
+    margin-bottom: 1rem; }
     @media (max-width: 75em) {
       .open__content--tittle {
-        font-size: 4rem; } }
+        font-size: 4rem;
+        margin-bottom: 0rem; } }
     @media (max-width: 37.5em) {
       .open__content--tittle {
         font-size: 4rem; } }
@@ -424,6 +426,10 @@ body {
   align-items: center;
   gap: 1rem;
   padding: 1rem; }
+  @media (max-width: 56.25em) {
+    .container--language {
+      top: 10px;
+      right: 10px; } }
 
 .container--language::before,
 .container--language::after {
@@ -634,9 +640,6 @@ body {
   line-height: 1.5;
   color: #000;
   background-color: #0F2415; }
-
-h1, h2, h3 {
-  margin-bottom: 1rem; }
 
 .container {
   max-width: 1200px;

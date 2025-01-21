@@ -28,9 +28,11 @@
       color: $colorTittle;
       font-weight: 500;
       line-height: 5rem;
-      // margin-bottom: -1rem;
+       margin-bottom: 1rem;
       @include respond(desktop) {
         font-size: $section-tittle;
+        margin-bottom: 0rem;
+
       }
 
       @include respond(phone) {
