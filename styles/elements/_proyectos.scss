@@ -257,6 +257,7 @@ $colorCard: #F0FFF4;
       gap: 1rem;
       font-weight: 1000;
       padding: 1rem 0;
+      transition: color 0.3s ease;
 
       /*this is for links show at the bottom of the container, but only in desktop, so in mobile and ipad is not a lot of empty space*/
 color: #fff;
@@ -286,6 +287,8 @@ color: #fff;
       text-transform: none;
       color: $colorCard;
       font-size: 1.1rem;
+            transition: color 0.3s ease;
+
       font-family: 'Ibarra Real Nova', serif;
 
    }

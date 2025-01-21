@@ -326,6 +326,7 @@ body {
   gap: 1rem;
   font-weight: 1000;
   padding: 1rem 0;
+  transition: color 0.3s ease;
   /*this is for links show at the bottom of the container, but only in desktop, so in mobile and ipad is not a lot of empty space*/
   color: #fff; }
   @media screen and (min-width: 900px) {
@@ -345,6 +346,7 @@ body {
   text-transform: none;
   color: #F0FFF4;
   font-size: 1.1rem;
+  transition: color 0.3s ease;
   font-family: 'Ibarra Real Nova', serif; }
 
 .tecnology--item {
@@ -619,7 +621,8 @@ li::marker {
   margin-bottom: 1rem; }
 
 .project__link--demo a {
-  text-underline-offset: 5px; }
+  text-underline-offset: 5px;
+  transition: color 0.3s ease; }
   .project__link--demo a:hover {
     color: #ff9d00; }
 

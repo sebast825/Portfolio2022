@@ -184,6 +184,8 @@ li::marker {
 
 .project__link--demo a {
   text-underline-offset: 5px;
+  transition: color 0.3s ease;
+
   &:hover {
     color: $colorHighlight;
   }
