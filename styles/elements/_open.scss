@@ -38,7 +38,9 @@
       }
 
       @include respond(phone) {
-        font-size: $section-tittle;
+        font-size: $section-tittle--medium;
+        line-height: 4rem!important;
+
       }
     }
 
@@ -48,7 +50,7 @@
       margin-bottom: 2rem;
 
       @include respond(phone) {
-        font-size: $section-subtittle;
+        font-size: $section-subtittle--phone;
         margin: 0;
         margin-bottom: .5rem;
       }

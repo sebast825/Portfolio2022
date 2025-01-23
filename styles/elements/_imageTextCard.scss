@@ -29,7 +29,7 @@ $image-max-width: 500px;
       gap: 2rem;
     }
     @include respond(desktop) {
-      width: 75vw;
+      width: 90vw;
       gap: 1rem;
     }
     @media (min-width: 1700px) {
@@ -165,8 +165,7 @@ li::marker {
 }
 
 .custom__project__tecnology {
-  flex-wrap: nowrap;
-
+  flex-wrap: wrap;
   transform: scale(0.9);
   @include respond(phone) {
     transform: scale(0.7);
