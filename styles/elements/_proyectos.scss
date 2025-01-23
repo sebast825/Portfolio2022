@@ -168,10 +168,7 @@ $colorCard: #F0FFF4;
       flex-direction: column;
       position: relative;
      
-      p {
-         font-size: 1.1rem;
-
-      }
+   
 
       @include respond(ipad) {
          padding: 0 1rem;
@@ -215,10 +212,7 @@ $colorCard: #F0FFF4;
       }
       
 
-      p {
-         font-size: 1.2rem;
-
-      }
+    
    }
 
    &__tecnology {

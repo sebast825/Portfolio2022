@@ -265,8 +265,6 @@ body {
   flex-direction: column;
   position: relative;
   /*this is for links show at the bottom of the container, but only in desktop, so in mobile and ipad is not a lot of empty space*/ }
-  .project__content p {
-    font-size: 1.1rem; }
   @media (max-width: 56.25em) {
     .project__content {
       padding: 0 1rem; } }
@@ -297,8 +295,6 @@ body {
     .project__description {
       max-height: 10rem;
       overflow-y: auto; } }
-  .project__description p {
-    font-size: 1.2rem; }
 
 .project__tecnology {
   display: flex;
@@ -910,7 +906,7 @@ body {
     letter-spacing: 2px; }
     @media (max-width: 37.5em) {
       .section__text p, .section__text li, .section__project--big p, .section__project--big li {
-        font-size: 1.2rem; } }
+        font-size: 1rem; } }
   .section__text li, .section__project--big li {
     margin: auto; }
 
@@ -943,6 +939,11 @@ body {
       margin: 0;
       width: 100vw;
       padding-bottom: 7rem; } }
+  .section__project p {
+    font-size: 1.2rem; }
+    @media (max-width: 37.5em) {
+      .section__project p {
+        font-size: 1rem; } }
 
 .section__teconology {
   background-color: #00310e;
