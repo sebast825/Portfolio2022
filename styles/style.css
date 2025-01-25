@@ -177,7 +177,8 @@ body {
   align-items: center;
   align-content: center;
   margin: auto;
-  gap: 2rem; }
+  gap: 2rem;
+  text-shadow: 0px 0 5px #0D1518; }
   @media screen and (max-width: 1500px) {
     .proyectos {
       grid-template-columns: repeat(2, 1fr); } }
@@ -195,7 +196,7 @@ body {
 .container__project {
   /* border: 2px solid red; */
   display: flex;
-  box-shadow: 0px 0px 8px #00310e;
+  box-shadow: 0px 0px 8px #0D1518;
   width: 900px;
   max-width: 450px;
   flex-direction: column;
@@ -206,7 +207,7 @@ body {
   overflow: hidden;
   gap: 1.5rem;
   margin-bottom: 5rem;
-  background-color: rgba(0, 49, 14, 0.8); }
+  background-color: rgba(13, 21, 24, 0.8); }
   @media (max-width: 56.25em) {
     .container__project {
       margin: 0;
@@ -370,7 +371,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #00310e;
+    background-color: #0D1518;
     opacity: .1;
     transition: opacity .2s ease; }
   .tecnology--item a:hover::after {
@@ -487,7 +488,7 @@ body {
   /* Cambia de color */ }
 
 .bg_custom {
-  background-color: #00310e;
+  background-color: #0D1518;
   color: #ddd !important; }
 
 .bg_custom--darken {
@@ -950,7 +951,7 @@ li {
         font-size: 1rem; } }
 
 .section__teconology {
-  background-color: #00310e;
+  background-color: #0D1518;
   padding: 5rem 0;
   justify-content: center; }
   .section__teconology--tittle {
@@ -973,7 +974,7 @@ li {
         padding: 0rem 0rem; } }
 
 footer {
-  background-color: #00310e;
+  background-color: #0D1518;
   border-top: 1px solid white;
   padding: 3rem; }
 
@@ -992,10 +993,10 @@ footer {
   width: 100%; }
 
 .gradient--one {
-  background-color: #00360f; }
+  background-color: #0f181b; }
 
 .gradient--two {
-  background-color: #001d08; }
+  background-color: #06090b; }
 
 body {
-  background-color: #00310e; }
+  background-color: #0D1518; }
