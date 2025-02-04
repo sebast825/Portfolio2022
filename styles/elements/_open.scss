@@ -18,7 +18,7 @@
     height: 100vh;
     justify-content: center;
     text-shadow: 2px 0px 10px #444;
-
+    padding: 16px;
     @include respond(phone) {
       // justify-content: flex-start;
       // margin-top: 10rem;
