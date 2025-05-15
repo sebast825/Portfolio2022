@@ -817,16 +817,20 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 2rem; }
-  @media (max-width: 56.25em) {
-    .lpWebsite__proyectos {
-      flex-direction: column; } }
 
 .lpWebsite__container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 0.5rem; }
+  gap: .5rem;
+  width: 20%;
+  max-width: 20%;
+  text-decoration: none !important; }
+  @media (max-width: 56.25em) {
+    .lpWebsite__container {
+      width: 40%;
+      max-width: 40%; } }
   .lpWebsite__container:hover {
     cursor: pointer; }
   .lpWebsite__container:hover .lpWebsite__img {
@@ -835,8 +839,8 @@ body {
     color: #ff9d00; }
 
 .lpWebsite__img {
-  width: 400px;
-  height: 350px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   border-radius: 5px;
   box-shadow: 0px 0px 30px rgba(255, 157, 0, 0.4);
