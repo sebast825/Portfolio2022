@@ -137,7 +137,63 @@
             </a>
          </div>
       </section>
+   
+      <section class="section__project--big section-text bg_custom bg_photo big_project gradient--two">
+         <div>
+            <h2 class="project-big-title">Secure Authentication & Authorization API</h2>
+            <h3 class="project-big--subtitle">
+               A production-ready, scalable authentication service with advanced security features
+            </h3>
+         </div>
 
+         <div>
+            <h3 class="project--big-subtitle card-subtitle">The Challenge</h3>
+            <p>
+               Modern applications require robust security against evolving threats like DDoS, credential stuffing,
+               and brute force attacks. A standalone authentication service was needed that could handle high traffic
+               while maintaining strict security protocols and comprehensive audit trails.
+            </p>
+
+            <h3 class="project--big-subtitle card-subtitle">The Solution</h3>
+            <p>
+               I architected and developed a complete authentication API using Clean Architecture with .NET 8,
+               implementing JWT with refresh tokens, IP-based rate limiting, and a queue-based system (RabbitMQ)
+               to prevent database saturation during attack scenarios.
+            </p>
+
+            <h3 class="project--big-subtitle card-subtitle">Key Features
+            </h3>
+            <ul class="">
+               <li><strong>Queue-Based Attack Mitigation:</strong> RabbitMQ integration to offload failed login attempts
+                  during brute force attacks.</li>
+               <li><strong>Comprehensive Audit Trail:</strong> Detailed logging of all authentication events with IP,
+                  device, and timestamp data.</li>
+
+               <li><strong>JWT with Refresh Tokens:</strong> Secure token management with automatic invalidation on
+                  logout.</li>
+               <li><strong>Defense-in-Depth:</strong> Multiple security layers including rate limiting, and attempt
+                  logging.</li>
+               <li><strong>Database Protection:</strong> Queue persistence prevents connection pool exhaustion during
+                  attacks.</li>
+            </ul>
+
+
+
+            <div class="project__tecnology custom__project__tecnology">
+               <span>.NET 8</span>
+               <span>JWT</span>
+               <span>RabbitMQ</span>
+               <span>SQL Server</span>
+               <span>Docker</span>
+               <span>MsTest</span>
+            </div>
+         </div>
+            <div class="custom__project__link ">
+               <div class="project__link--demo">
+                  <a href="https://github.com/sebast825/AuthService" target="_blank">Code</a>
+               </div>
+               </div>
+      </section>
       <section class="section__project--big section-text bg_custom bg_photo big_project gradient--two">
          <div>
             <h2 class="project-big-title">Stripe Subscription Integration</h2>
@@ -239,6 +295,7 @@
                <span>JWT</span>
                <span>MSTest</span>
             </div>
+         
          </div>
       </section>
 
