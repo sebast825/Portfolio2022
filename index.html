@@ -118,7 +118,7 @@
          </div>
 
 
-     <div class="lpWebsite__proyectos">
+         <div class="lpWebsite__proyectos">
             <a href="https://14andluxe.com/" class="lpWebsite__container" target="_blank">
                <img class="lpWebsite__img" src="img/lpWebsites/14th$luxe-w300.webp" loading="lazy" alt="Living room">
                <span class="lpWebsite__link">14th & Luxe</span>
@@ -138,7 +138,69 @@
          </div>
       </section>
 
+      <section class="section__project--big section-text bg_custom bg_photo big_project gradient--two">
+         <div>
+            <h2 class="project-big-title">Stripe Subscription Integration</h2>
+            <h3 class="project-big--subtitle">
+               The reliable and scalable system for managing recurring payments on SaaS platforms
+            </h3>
+         </div>
 
+         <div>
+            <h3 class="project--big-subtitle card-subtitle">The Challenge</h3>
+            <p>
+               Building a standalone payment system from scratch required handling Stripe's asynchronous webhooks, which
+               can arrive out of order or be retransmitted multiple times. A self-contained solution was needed that
+               guaranteed idempotency and consistency without relying on existing infrastructure.
+
+            </p>
+
+            <h3 class="project--big-subtitle card-subtitle">The Solution</h3>
+            <p>
+               I designed and developed a full-stack system with a .NET 8 backend and React frontend,
+               implementing idempotent webhook logic and timestamp comparison to maintain consistency
+               despite disordered events.
+            </p>
+
+            <h3 class="project--big-subtitle card-subtitle">Technical Highlights</h3>
+            <ul class="">
+               <li><strong>Idempotent Webhook Processing:</strong> Each Stripe event is logged and validated to prevent
+                  duplicates from automatic retries.</li>
+               <li><strong>Timestamp-based Consistency:</strong> Events are compared by creation time to avoid outdated
+                  webhooks overwriting current state.</li>
+               <li><strong>Race Condition Resolution:</strong> Special handling for initial payments where payment
+                  confirmation may arrive before subscription creation.</li>
+               <li><strong>Request Queue Pattern:</strong> Frontend interceptor prevents multiple simultaneous token
+                  refresh attempts.</li>
+            </ul>
+            <br>
+
+            <h3 class="project--big-subtitle card-subtitle">Achieved Impact</h3>
+            <ul class="">
+               <li><strong>Zero duplications</strong> thanks to processed event logging and idempotency validation.</li>
+               <li><strong>Robust race condition handling</strong> for edge cases in payment flow sequencing.</li>
+               <li><strong>Modular architecture</strong> separating checkout, webhooks, and state management, enabling
+                  scaling to thousands of daily transactions.</li>
+            </ul>
+
+            <div class="project__tecnology custom__project__tecnology">
+               <span>.NET 8</span>
+               <span>React</span>
+               <span>Stripe API</span>
+               <span>SQL Server</span>
+               <span>MsTest</span>
+            </div>
+            <div class="custom__project__link ">
+               <div class="project__link--demo">
+                  <a href="     https://www.youtube.com/watch?v=IIlhg_UZUeY" target="_blank">Video Demo</a>
+               </div>
+               <div class="project__link--demo">
+                  <a href="https://github.com/sebast825/Stripe-Project" target="_blank">Code</a>
+               </div>
+            </div>
+
+         </div>
+      </section>
       <section class="section__project--big section-text bg_custom bg_photo big_project gradient--two">
          <div>
             <h2 class="project-big-title">Medical Appointment Management API</h2>
