@@ -45,7 +45,7 @@ body {
   font-size: 3.5rem;
 }
 .open__subtitle {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .open__content {
   display: flex;
@@ -77,7 +77,7 @@ body {
   }
 }
 .open__content--subTittle {
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   color: #F0FFF4;
   margin-bottom: 2rem;
 }
@@ -710,7 +710,8 @@ body {
 }
 
 .project-big--subtitle {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  text-align: center;
 }
 @media (max-width: 37.5em) {
   .project-big--subtitle {
@@ -788,7 +789,7 @@ li::marker {
 }
 
 .project--big-subtitle {
-  font-size: 2.6rem;
+  font-size: 1.95rem;
   color: #ff9d00;
 }
 @media (max-width: 37.5em) {
@@ -1020,6 +1021,9 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 2rem;
+}
+.lpWebsite__description {
+  margin-bottom: 2rem;
 }
 .lpWebsite__container {
   display: flex;

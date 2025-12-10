@@ -10,7 +10,9 @@
       //flex-direction: column;
     }
   }
-
+  &__description{
+    margin-bottom: 2rem;
+  }
   &__container {
     display: flex;
     justify-content: center;

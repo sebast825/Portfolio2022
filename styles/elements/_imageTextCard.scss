@@ -111,6 +111,7 @@ $image-max-width: 500px;
 }
 .project-big--subtitle{
   font-size: $section-subtittle;
+  text-align: center;
     @include respond(phone) {
   font-size: $section-subtittle--phone;
   }
