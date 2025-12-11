@@ -1173,7 +1173,7 @@ li {
 }
 
 .section__project {
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/img/imgBg/hojas4.jpg");
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url("/img/imgBg/hojas4.jpg");
   position: relative;
   padding: 5rem 0;
   width: 100%;
